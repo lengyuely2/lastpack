@@ -20,7 +20,7 @@ files.set('/progression.mjs','shared/progression.mjs');files.set('/campaign.mjs'
 files.set('/career.mjs','public/career.mjs');
 files.set('/forge-reel.mjs','public/forge-reel.mjs');
 files.set('/expedition.mjs','shared/expedition.mjs');files.set('/expedition-ui.mjs','public/expedition-ui.mjs');
-files.set('/i18n.mjs','public/i18n.mjs');files.set('/locale-en.mjs','public/locale-en.mjs');files.set('/shell.mjs','public/shell.mjs');files.set('/shell.css','public/shell.css');files.set('/challenges.mjs','shared/challenges.mjs');files.set('/achievements.mjs','shared/achievements.mjs');files.set('/experience-ui.mjs','public/experience-ui.mjs');
+files.set('/character-art.mjs','shared/character-art.mjs');files.set('/i18n.mjs','public/i18n.mjs');files.set('/locale-en.mjs','public/locale-en.mjs');files.set('/shell.mjs','public/shell.mjs');files.set('/shell.css','public/shell.css');files.set('/challenges.mjs','shared/challenges.mjs');files.set('/achievements.mjs','shared/achievements.mjs');files.set('/experience-ui.mjs','public/experience-ui.mjs');
 files.set('/recycling.mjs','shared/recycling.mjs');files.set('/recycling-ui.mjs','public/recycling-ui.mjs');
 files.set('/bag-links.mjs','shared/bag-links.mjs');
 files.set('/bag-lab.mjs','public/bag-lab.mjs');

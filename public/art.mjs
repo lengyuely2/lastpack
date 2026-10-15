@@ -1,3 +1,4 @@
+import {CHARACTER_ART,characterPalette} from '/character-art.mjs';
 import {translateText} from '/i18n.mjs';
 import {dangerDistance} from '/survival.mjs';
 import {MAPS} from '/expedition.mjs';
@@ -79,6 +80,12 @@ const paths={
  hourglass:'<path d="M25 5h36M25 49h36M29 5v9l13 13-13 13v9m28-44v9L44 27l13 13v9M34 14h18l-9 10zM34 42l9-10 9 10z"/>',
  charm:'<path d="m43 5 7 14 16 2-12 11 3 16-14-8-14 8 3-16-12-11 16-2z"/>',
  battery:'<rect x="29" y="7" width="28" height="40" rx="4"/><path d="M37 7V2h12v5M46 15l-9 13h9l-6 12"/>',
+ lock:'<rect x="25" y="22" width="36" height="27"/><path d="M32 22V13a11 11 0 0 1 22 0v9M43 32v8"/>',
+ compass:'<circle cx="43" cy="26" r="21"/><path d="m49 13-3 17-12 10 5-17z"/>',
+ bell:'<path d="M22 37h42l-7-10V17a14 14 0 0 0-28 0v10zM36 42q7 12 14 0M43 1v4"/>',
+ echo:'<path d="M23 10h29v35H23zM52 16h9v29h-9M29 18h17M29 25h17M29 32h11M64 14q15 12 0 24"/>',
+ bag:'<rect x="23" y="14" width="40" height="34"/><path d="M33 14V5h20v9M23 28h40M34 28v9h18v-9"/>',
+ map:'<path d="m9 10 23-6 22 7 23-6v35l-23 6-22-7-23 6zM32 4v35M54 11v35"/>',
  survivor:'<circle cx="43" cy="15" r="10"/><path d="M26 44V29c0-11 34-11 34 0v15zM34 30h18v14H34z"/>'
 };
 // Original art, drawn on a 480 × 310 pixel surface and enlarged without filtering.
@@ -95,6 +102,7 @@ export function icon(kind,color='currentColor'){
 }
 function surface(w,h){const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;return canvas;}
 const SPRITES={
+  ...Object.fromEntries(Object.entries(CHARACTER_ART).map(([k,d])=>[k,d.rows])),
   survivor:[
     '......oooo......','.....ohhhho.....','....ohHHHHho....','....ohHHHHho....',
     '....ohsssso.....','....ohsEso......','.....osssso.....','.....obbbbo.....',
@@ -133,6 +141,7 @@ function sprite(kind,color,frame=0,slow=false){
   const key=[kind,color,frame,slow].join(':');if(sprites.has(key))return sprites.get(key);
   const rows=SPRITES[kind]||SPRITES.walker,canvas=surface(16,24),c=canvas.getContext('2d');
   const palette={o:'#151522',h:'#403d58',H:'#696280',s:slow?'#91d6de':kind==='survivor'?'#e0bb9e':kind==='runner'?'#b9bacb':'#95aa7c',E:kind==='survivor'?'#241e35':'#ff956b',R:'#70424d',C:slow?'#4b97bd':color,c:kind==='survivor'?'#546771':'#514d68',b:'#201c31',d:'#494053',Y:'#e5be66'};
+  if(CHARACTER_ART[kind])Object.assign(palette,characterPalette(kind,color));
   for(let y=0;y<rows.length;y++)for(let x=0;x<16;x++){const ch=rows[y][x];if(!palette[ch])continue;c.fillStyle=palette[ch];const foot=y>=rows.length-3&&frame?(x<8?1:-1):0;c.fillRect(x,y+foot,1,1);}
   sprites.set(key,canvas);return canvas;
 }
@@ -180,7 +189,7 @@ export function drawField(canvas,state,{preview=false,now=0,quality='balanced',n
       c.fillStyle='#11152199';c.fillRect(x-7,foot-1,14,3);c.fillStyle='#10121bd9';c.fillRect(x-4,foot,8,2);
       if(type==='turret'){c.fillStyle='#262535';c.fillRect(x-7,y-4,14,11);c.fillStyle=['','#c4c1c9','#72b0e7','#b193dc','#e58483'][e.tier];c.fillRect(x-5,y-5,10,8);pixelLine(c,x,y,x+Math.cos(e.angle)*14,y+Math.sin(e.angle)*14,'#b1adb9',3);continue;}
       if(type==='player'&&e.hp<=0){c.fillStyle='#523344';c.fillRect(x-7,y-2,14,7);c.fillStyle='#f09292';c.fillRect(x-1,y-9,3,9);c.fillRect(x-4,y-6,9,3);if(e.revive)ring(c,x,y,12,'#b5d9a4',e.revive/4);continue;}
-      const kind=type==='player'?'survivor':e.kind,color=type==='player'?e.color:({walker:'#665976',runner:'#797fa6',brute:'#8b6158',boss:'#974d66'}[kind]||'#665976'),scale=kind==='boss'?2:kind==='brute'?1.5:1;
+      const kind=type==='player'?(CHARACTER_ART[e.character]?e.character:'scout'):e.kind,color=type==='player'?e.color:({walker:'#665976',runner:'#797fa6',brute:'#8b6158',boss:'#974d66'}[kind]||'#665976'),scale=kind==='boss'?2:kind==='brute'?1.5:1;
       const walking=moving&&(type!=='player'||e.controlMode!=='manual'||Math.hypot(e.moveInput?.x||0,e.moveInput?.y||0)>0);
       const rank=e.rank||monsterRank(kind,state.wave),external=type==='enemy'?monsterArt(kind,rank,now+Number(String(e.id).replace(/\D/g,''))*.13,{walking,attack:e.attack,slow:e.slow>0}):null;
       const monsterScale=kind==='boss'?2:kind==='brute'?1.5:1.25;

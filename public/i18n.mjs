@@ -50,6 +50,6 @@ export function setupLanguage(){
  document.addEventListener('lastpack-language',()=>{for(const item of controls)item.value=language;walk(document.documentElement);});
  new MutationObserver(records=>{if(language!=='en')return;const roots=new Set();for(const record of records){if(record.type==='childList')for(const node of record.addedNodes)roots.add(node);else roots.add(record.target);}for(const root of roots)if(root.isConnected)walk(root);}).observe(document.documentElement,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['title','placeholder','aria-label']});
  setLanguage(language);
- fetch('/health').then(r=>r.ok?r.json():null).then(health=>{if(!health?.ephemeralStorage)return;const note=document.createElement('p');note.id='hosting-note';note.textContent='免费演示服：首次访问可能等待约一分钟，服务重启可能重置成长。';document.querySelector('#landing').append(note);walk(note);}).catch(()=>{});
+ fetch('/health').then(r=>r.ok?r.json():null).then(health=>{if(!health?.ephemeralStorage)return;const note=document.createElement('p');note.id='hosting-note';note.textContent='首次加载稍慢 · 存档可能重置';document.querySelector('#landing').append(note);walk(note);}).catch(()=>{});
  return {translate:translateText,setLanguage};
 }

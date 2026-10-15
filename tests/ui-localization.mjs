@@ -23,5 +23,3 @@ try{
  const mobile=await browser.newPage({viewport:{width:390,height:844}});mobile.on('pageerror',e=>errors.push(e.message));await mobile.goto('http://127.0.0.1:18892/');await mobile.locator('#language-select').selectOption('en');await mobile.locator('#menu-title').filter({hasText:'Survive till dawn.'}).waitFor();assert.ok(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await mobile.screenshot({path:'docs/menu-english-mobile.png'});
  assert.deepEqual(errors,[]);console.log('Language UI passed: all menus, filters, rarity flavor, persistence, Chinese restoration, protected callsigns, in-run switching and mobile layout.');
 }finally{if(browser)await browser.close();const ended=once(proc,'exit');proc.kill();await ended;await rm(dir,{recursive:true,force:true});}
-
-
