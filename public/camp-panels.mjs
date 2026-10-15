@@ -8,7 +8,7 @@ export function createCampPanels({$,getState,selectScene}){
   2:{label:'图鉴',items:[['catalog-button','weapon-catalog','武器','pistol'],['items-button','item-catalog','配件','bag'],['fusion-button','fusion-dialog','融合','stormorb'],['monsters-button','monster-catalog','怪物','ghostaxe']]},
   3:{label:'设置',items:[['graphics-button','graphics-dialog','画面','scope'],['sound-button','sound-settings','声音','bell'],['automation-button','automation-settings','自动','loader'],['help-button','help','指南','echo']]}
  };
- const panel=document.createElement('section');panel.id='camp-panel';panel.className='camp-panel hidden';panel.setAttribute('aria-label','营地面板');panel.innerHTML='<div class="camp-panel-heading"><div><span class="camp-panel-mark" aria-hidden="true">✦</span><h2 id="camp-panel-title"></h2></div><button id="camp-panel-close" class="text-button" aria-label="返回出征">✕</button></div><nav id="camp-panel-tabs" aria-label="面板分类"></nav><div id="camp-panel-content"></div>';landing.append(panel);
+ const panel=document.createElement('section');panel.id='camp-panel';panel.className='camp-panel hidden';panel.setAttribute('aria-label','营地面板');panel.setAttribute('aria-labelledby','camp-panel-title');panel.innerHTML='<h2 id="camp-panel-title" class="camp-accessible-title"></h2><nav id="camp-panel-tabs" aria-label="面板分类"></nav><div id="camp-panel-content"></div>';landing.append(panel);
  const origins=new Map();
  function close(){
   changing=true;const previous=active;active=null;if(previous){if(previous.open)previous.close();previous.classList.remove('camp-docked');const origin=origins.get(previous);origin.parent.insertBefore(previous,origin.next?.parentNode===origin.parent?origin.next:null);}
@@ -29,6 +29,5 @@ export function createCampPanels({$,getState,selectScene}){
  for(const [group,definition]of Object.entries(groups))for(const item of definition.items)register(Number(group),item);
  register(1,['career-button','run-report','远征纪事','echo']);
  $('camp-panel-tabs').onclick=e=>{const button=e.target.closest('[data-camp-target]');if(button)$(button.dataset.campTarget).click();};
- $('camp-panel-close').onclick=()=>{close();selectScene(0);};
  return {close,isDocked:dialog=>!!dialog&&dialog===active&&dialog.open,hasOpenPanel:()=>!!active?.open,openScene(scene){if(!groups[scene]){close();return;}$(groups[scene].items[0][0]).click();}};
 }
