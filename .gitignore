@@ -1,0 +1,23 @@
+node_modules/
+*.log
+server.pid
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+server-port.txt
+
+# Local career credentials and runtime files
+data/
+server.pid
+*.log
+node_modules/
+
+# Local screenshots, reports and diagnostics are not deployment inputs.
+docs/*
+!docs/DEPLOYMENT.md
+!docs/i18n-phrases.json
+!docs/i18n-en.tsv
+!docs/balance-simulation.mjs
+public/assets/monsters/source.zip

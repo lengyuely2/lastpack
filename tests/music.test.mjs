@@ -1,0 +1,19 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createMusic,musicScene,MUSIC_THEMES} from '../public/music.mjs';
+function rig(){const sources=[],store=new Map(),timers=new Map();let id=0,hidden=false,context;
+  const param=()=>({value:0,setTargetAtTime(){},setValueAtTime(){},exponentialRampToValueAtTime(){}});
+  class Context{constructor(){context=this;this.currentTime=0;this.state='running';this.sampleRate=8000;this.destination={};}createGain(){return {gain:param(),connect(){},disconnect(){}};}createDynamicsCompressor(){return {threshold:param(),ratio:param(),connect(){}};}createBuffer(channels,n){return {getChannelData:()=>new Float32Array(n)};}source(){const s={frequency:{...param(),setValueAtTime(value){s.frequencyValue=value;}},connect(){},disconnect(){},start(t){this.startTime=t;},stop(t){if(t===undefined)this.onended?.();else this.end=t;}};sources.push(s);return s;}createOscillator(){return this.source();}createBufferSource(){return this.source();}async resume(){this.state='running';}close(){this.state='closed';}}
+  const options={Context,storage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},interval:fn=>{const key=++id;timers.set(key,fn);return key;},clear:key=>timers.delete(key),hidden:()=>hidden};const music=createMusic(options);
+  function advance(seconds){for(let i=0;i<Math.ceil(seconds/.075);i++){context.currentTime+=.075;for(const s of sources)if(s.end<=context.currentTime&&!s.done){s.done=true;s.onended?.();}for(const fn of timers.values())fn();}}
+  return {music,sources,store,timers,options,advance,get context(){return context;},setHidden(v){hidden=v;music.visibility();}};
+}
+test('music is gesture-unlocked, schedules original bounded notes and keeps only one loop',async()=>{
+  const r=rig();assert.equal(r.sources.length,0);assert.equal(r.timers.size,0);assert.equal(r.music.isPlaying,false);assert.equal(await r.music.unlock(),true);assert.equal(r.music.isPlaying,true);assert.equal(r.timers.size,1);const initial=r.sources.length;await r.music.unlock();assert.equal(r.timers.size,1);r.advance(30);assert.ok(r.sources.length>initial+30);assert.ok(r.music.activeVoices<=24);assert.ok(r.sources.every(s=>Number.isFinite(s.startTime)&&Number.isFinite(s.end)));r.music.destroy();assert.equal(r.timers.size,0);assert.equal(r.music.activeVoices,0);assert.equal(r.music.isPlaying,false);
+});
+test('separate persistent music mute/volume and background pause prevent continuing or stacked tracks',async()=>{
+  const r=rig();await r.music.unlock();r.music.setMuted(true);assert.equal(r.timers.size,0);assert.equal(r.music.activeVoices,0);r.music.setVolume(.61);assert.equal(r.store.get('lastpack-music-volume'),'0.61');assert.equal(r.store.has('lastpack-volume'),false);const restored=createMusic(r.options);assert.equal(restored.muted,true);assert.equal(restored.volume,.61);r.music.setMuted(false);assert.equal(r.timers.size,1);r.setHidden(true);assert.equal(r.timers.size,0);r.setHidden(false);assert.equal(r.timers.size,1);r.music.setVolume(0);assert.equal(r.timers.size,0);r.music.setVolume(.3);assert.equal(r.timers.size,1);r.music.destroy();
+});
+test('scene changes use distinct patterns and tempo while avoiding repeated timer creation',async()=>{
+  const r=rig();await r.music.unlock();r.advance(3);r.music.setScene('boss');const first=r.sources.length;r.advance(6);assert.equal(r.music.scene,'boss');assert.match(r.music.title,/首领/);assert.ok(r.sources.slice(first).some(s=>s.frequencyValue<80));assert.equal(r.timers.size,1);assert.equal(musicScene({phase:'battle',enemies:[{kind:'boss'}]}),'boss');assert.equal(musicScene({phase:'battle',enemies:[],pacing:'尸潮爆发'}),'surge');assert.equal(musicScene({phase:'upgrade'}),'upgrade');assert.equal(musicScene({phase:'victory'}),'victory');assert.equal(musicScene(null),'menu');assert.ok(new Set(Object.values(MUSIC_THEMES).map(t=>JSON.stringify([t.bpm,t.roots,t.melody]))).size>=7);r.music.destroy();
+});

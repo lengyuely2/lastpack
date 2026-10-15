@@ -1,0 +1,2162 @@
+0 Player effect intensity
+1 Clear
+2 Balanced
+3 Spectacular
+4 Damage numbers
+5 All
+6 Minimal
+7 Critical hits only
+8 Enemy projectiles
+9 Boss warnings and player markers always remain visible
+10 Chest practice
+11 Practice boss
+12 Chest opened!
+13 Choose a reward
+14 Fusion complete
+15 Ingredients consumed
+16 Walking to the chest
+17 Consume these two Legendary weapons
+18 Fuse
+19 Take this reward
+20 Training Survivor
+21 Stage
+22 Discover equipment in a real run first
+23 Full practice unlocks once the collection is complete
+24 Enable sound
+25 Mute
+26 Enable music
+27 Disable music
+28 Music is off
+29 Now playing
+30 Press any button to start music
+31 Music playback is unavailable in this browser
+32 Sound playback is unavailable in this browser
+33 Playing preview
+34 Sound is muted
+35 Enable sound or turn up the volume
+36 One moment
+37 Preview again
+38 XP
+39 Level up
+40 Reward reels
+41 Reward reveal
+42 Pocket Pistol
+43 Shotgun
+44 SMG
+45 Sniper
+46 Rocket blast
+47 Laser
+48 Ice bolt
+49 Electric shock
+50 Flame jet
+51 Slash
+52 Zombie arrival
+53 Mutant zombie
+54 Elite zombie
+55 Skeleton arrival
+56 Brute arrival
+57 Overlord arrival
+58 Reload
+59 Damage taken
+60 Healing
+61 Revive
+62 Wave start
+63 Extraction complete
+64 Squad wiped
+65 Chest opened
+66 Choose a boss trophy
+67 Supplies revealed
+68 Pick one for your build
+69 Fusion consumes both recipe weapons
+70 Other rewards do not consume existing weapons
+71 Existing weapons never lose rarity
+72 The animation does not cost XP
+73 or change the rewards
+74 Bonus chest reward
+75 With two matching Legendary ingredients
+76 a fusion option may appear
+77 Random reward rarity
+78 Boss
+79 's chest
+80 Fortune Reels
+81 Level up!
+82 Boss loot
+83 Choose one bonus reward
+84 Level-up supplies
+85 Pick one of three
+86 Opening boss chest
+87 Revealing level-up rewards
+88 Claiming supplies
+89 Reconnecting
+90 Please wait
+91 Online
+92 Expired
+93 Run saved
+94 Continue next time
+95 Offline
+96 This survivor was resumed in another window
+97 Disconnected
+98 Restoring room
+99 Continue saved run
+100 Save & leave
+101 Solo
+102 Survivor
+103 Enter the complete
+104 -character room code
+105 Solo rooms do not need invites
+106 Invite link copied
+107 Send it to a teammate to join
+108 Room code
+109 weapons
+110 Damage
+111 times
+112 s
+113 Range
+114 Boss chest
+115 Recipe ready
+116 Requires two Legendary weapons
+117 Legendary
+118 Try this recipe
+119 items
+120 Choose a build to see its core combinations
+121 Level-up rewards are still random
+122 Items must be in your backpack to work
+123 Mix builds freely
+124 Weapon attachment
+125 Character
+126 Squad item
+127 slots
+128 Rotten Walker
+129 First
+130 min
+131 Normal
+132 Blue XP
+133 No.
+134 Mutant
+135 Health scales with survival time
+136 minutes onward
+137 Elite
+138 Elite appearance
+139 Graveyard Sprinter
+140 minutes onward
+141 Dash
+142 Charges after a ground warning
+143 Green XP
+144 Coffin Brute
+145 Armored
+146 Charges up a ground slam
+147 Red XP
+148 Coldbone Caster
+149 Ranged
+150 Fires aimed projectiles
+151 Timed boss
+152 minutes: first arrival
+153 then every
+154 Health scales with squad size
+155 Animation preview
+156 Star slots accept
+157 Select an item to see its star slots
+158 Rotation changes their direction
+159 Each item counts once per target
+160 Covering extra slots does not stack the bonus
+161 Inside the backpack
+162 Sharing an edge
+163 Attachments must target the same weapon
+164 Each combination applies once per target
+165 Rotated
+166 Click an empty slot to place again
+167 Expedition event
+168 Combat paused
+169 Choose your risk and reward
+170 Safehouse
+171 Organize backpack
+172 Prepare for the next wave
+173 Ready to deploy
+174 Level-up pause
+175 Chest unlocked
+176 Choose boss loot
+177 Event complete
+178 Choose a bonus reward
+179 Reached
+180 Choose a level-up reward
+181 Reward chosen
+182 Waiting for teammates
+183 In combat
+184 Boss fight
+185 Dodge the warnings
+186 Focus fire
+187 Wave
+188 Survive the horde
+189 You made it to dawn
+190 Rebuild your loadout
+191 Deploy again
+192 Room
+193 Keep surviving
+194 Manual movement
+195 Auto-attack
+196 Balanced movement
+197 Aggressive scavenging
+198 Conservative defense
+199 Auto movement
+200 Combat clock paused
+201 Safe zone
+202 Preparing equipment
+203 Run finished
+204 Clear
+205 On field
+206 enemies
+207 players have chosen
+208 players ready
+209 Total kills
+210 Endless survival
+211 Set a new record
+212 Extract
+213 Kill streak
+214 Run best
+215 Final boss defeated
+216 Claim chest
+217 Complete extraction
+218 Final boss fight
+219 Defeat the Blood Moon Judge
+220 defeated
+221 Next arrival
+222 Lich King
+223 Editable
+224 Backpack locked
+225 Weapons editable
+226 Gold
+227 Solo XP
+228 Shared squad XP
+229 Remaining
+230 level-up rewards to choose
+231 Next level requires
+232 Until
+233 still needed
+234 Run total
+235 One more run
+236 Combat in progress
+237 Claim your level-up reward first
+238 Ready
+239 Click to cancel
+240 Ready up
+241 Kill enemies to earn XP
+242 Pause on level-up to choose a weapon or item
+243 Combat resumes after choosing
+244 Co-op waits for all online teammates
+245 Items are placed automatically
+246 Overflow goes to storage
+247 Ready up to start auto combat
+248 Once all online teammates are ready
+249 combat begins together
+250 Kills
+251 This payout
+252 Scrap
+253 Progress saved
+254 Saving progression
+255 Build & results
+256 Permanent upgrades
+257 Waiting for teammates
+258 Continue to Endless
+259 Graveyard extraction complete
+260 This run's build
+261 Empty weapon slot
+262 Level up to earn a second weapon
+263 Fire rate
+264 Melee
+265 No ammo needed
+266 Projectile
+267 No reload needed
+268 Reloading
+269 Ammo
+270 Magazine size
+271 Stored in reserve when unequipped
+272 Keep at least one weapon equipped
+273 Move to reserve
+274 Merge two voluntarily
+275 Soul growth
+276 Run damage
+277 Reserve weapons
+278 Active while equipped
+279 Equip
+280 Merge
+281 Discard
+282 x
+283 column, row
+284 row
+285 Star slots
+286 Active
+287 Awaiting a match
+288 Weapon
+289 Select an attachment to see star slots
+290 Rotate to change direction
+291 Link attachments to the same weapon
+292 Used
+293 No items waiting for placement
+294 Kill and level up to earn items
+295 Select an item
+296 View effects
+297 Backpack empty
+298 Selected items auto-place on level-up
+299 Active when they fit
+300 Waiting for placement
+301 Still in storage
+302 Active inside backpack
+303 Remove
+304 Choose a teammate to receive this
+305 Give to teammate
+306 Rotate, then click a slot to place
+307 Inactive in storage
+308 No contiguous space
+309 Try rotating
+310 Remove an item
+311 or keep it in storage
+312 Max HP
+313 Movement
+314 HP per second
+315 Pickup radius
+316 XP bonus
+317 Healing multiplier
+318 Damage reduction
+319 Dodge chance
+320 Heal on dodge
+321 Critical hit
+322 Predicted effect if placed
+323 Actual contribution
+324 Find space automatically
+325 You
+326 Offline
+327 Downed
+328 Choosing reward
+329 Organizing
+330 Event reward
+331 Level-up reward
+332 Reward claimed
+333 Combat resumes when all teammates finish
+334 Boss fusion
+335 Mythic
+336 Consume both weapons
+337 Gain a fusion weapon
+338 Requirements no longer met
+339 Requires two Legendary ingredients
+340 Keep this weapon
+341 Claim & equip
+342 Claim to reserve
+343 Claim & merge
+344 Fits your current firepower
+345 Firepower practice
+346 Weapon effects
+347 Acid pool active
+348 Acid pool warning
+349 Necroduck's Wager
+350 Field Clinic
+351 Risky Chest
+352 Chest
+353 Overlord
+354 Resonance
+355 Dodge
+356 Leave the warning zone
+357 Wave cleared
+358 Squad assembling
+359 Choose a weapon or item
+360 One pocket pistol
+361 One empty backpack
+362 Make it out by dawn
+363 Horde surge
+364 Auto-pick rewards
+365 Manual rewards
+366 Waiting for reward reveal
+367 Individual settings
+368 You can always choose manually
+369 Manual selection
+370 Enable auto-pick in Automation settings
+371 Backpack practice
+372 Practice No.
+373 Practice
+374 After discovering items in real runs
+375 test their placement here
+376 Link broken
+377 Try moving or rotating attachments
+378 Rifle critical hit
+379 That placement overlaps or extends beyond the backpack
+380 Rotation would overlap another item
+381 Move to an empty space first
+382 Burn
+383 Blood Echo
+384 Grand Finale
+385 Phantom Reprisal
+386 Shatterworks
+387 Steam Overload
+388 Armorbreaker
+389 Thorns
+390 Echo Strike
+391 Build effect
+392 Awakened build
+393 Combo build
+394 activations
+395 Tonight's damage dealers
+396 Next run
+397 assemble your first build
+398 New discoveries
+399 and more
+400 items
+401 Last damage taken
+402 Saving this run's results
+403 Combat time
+404 Your level
+405 Squad
+406 Total damage
+407 Effective healing
+408 Rescues
+409 Run earnings
+410 Paid this time
+411 Character unlocked
+412 Keep trying new builds
+413 Permanent upgrades apply next run
+414 Build performance
+415 Graveyard
+416 Endless modifiers
+417 rounds
+418 Combos
+419 Faction ultimate
+420 Not awakened yet
+421 Damage sources
+422 No records yet
+423 Run achievements
+424 Try more builds
+425 recycling and challenge goals
+426 Final loadout
+427 Backpack build
+428 Empty backpack
+429 Scrap
+430 Tempered
+431 Refined
+432 Radiant
+433 Firepower
+434 Survival
+435 Collection
+436 Practice complete
+437 Mythic forged
+438 Reel animation preview only
+439 No gold spent
+440 No progression changes
+441 Rarity reels spinning
+442 Forge once
+443 Mythic achieved
+444 Still need
+445 Kill gold enters your wallet after settlement
+446 Each attempt costs gold
+447 A normal failure keeps your rank
+448 A downgrade loses only one rank
+449 One swing. Instant legend!
+450 Forge success
+451 Forge downgrade
+452 Needs more heat
+453 Rank unchanged
+454 Cost
+455 Saved
+456 Best time
+457 Connecting to progression profile
+458 Waiting for connection
+459 Deploy
+460 Total kills
+461 Highest level
+462 Unlocked
+463 Selected
+464 Select character
+465 Locked
+466 Upgrade
+467 Rarity reels
+468 HP
+469 Move speed
+470 Successful extraction
+471 Retreated
+472 Total
+473 Your first run starts with an empty backpack
+474 Defeat still earns scrap based on your results
+475 Next goal
+476 Character and upgrades are locked for this run
+477 New purchases and character changes
+478 apply next run
+479 Choose your character and upgrades in the safehouse
+480 Once everyone is ready
+481 run bonuses are locked
+482 Run history
+483 Reel practice
+484 Rarity reels started
+485 Ranks are cycling
+486 Result reveals when they stop
+487 Aim
+488 attacks and pickups happen automatically
+489 Chase XP and chests
+490 Dodge nearby threats first
+491 Hold your ground
+492 collect nearby loot
+493 retreat from danger
+494 Auto movement
+495 attacks and pickups
+496 arrow keys
+497 joystick movement
+498 Your survivor is down
+499 Waiting for a rescue
+500 Manual movement selected
+501 Once combat starts, use
+502 joystick
+503 Starting weapon
+504 Still just one weapon
+505 Relic
+506 Carry one per run
+507 Meet milestones to unlock starting weapons
+508 Equipped
+509 Select
+510 Map unlocks
+511 Choose before the room starts
+512 Defeat
+513 bosses to unlock
+514 wins to unlock
+515 Expedition map
+516 Run rules
+517 Faction resonance
+518 types
+519 distinct active backpack items
+520 Weapon combos
+521 Your two weapons or your teammates' weapons
+522 Expedition event choices
+523 Factions
+524 Combo practice
+525 Build practice
+526 Close build practice
+527 Complete a faction
+528 transform your firepower
+529 Separate practice mode
+530 Virtual equipment
+531 No gold spent or progression changes
+532 Collect equipment through level-ups in real runs
+533 Only active backpack items count
+534 Build
+535 Try this build
+536 Ultimate effect
+537 Dual-weapon combos
+538 Map
+539 Try this map
+540 Preview event choices
+541 Faction & weapon combo practice
+542 Different weapons
+543 apply a status, then detonate it
+544 During an expedition
+545 every
+546 minutes, an optional event appears
+547 Approach to choose
+548 Survive
+549 seconds of a curse for a reward
+550 Spend
+551 event tokens for
+552 rerolls and
+553 Pay a share of your max HP:
+554 to open a risky chest
+555 Every
+556 personal kills grant
+557 event tokens
+558 separate from permanent gold
+559 In Endless, every
+560 minutes choose a stacking modifier
+561 or extract and settle immediately
+562 Per run:
+563 rerolls
+564 bans
+565 skips that refund a reroll
+566 Bans remove that weapon or item type
+567 until the next run
+568 Rarity odds stay the same
+569 Fusion rewards cannot be banned
+570 Build Tester
+571 Necroduck's Wager
+572 Suspiciously Spiky Chest
+573 Next round
+574 Feeling reckless?
+575 For the next
+576 seconds, more normal enemies spawn
+577 Speed
+578 Survive until it ends
+579 Everyone gets one bonus reward
+580 You have
+581 tokens
+582 Restore
+583 and replenish
+584 The opener pays a share of max HP:
+585 Each teammate gets a three-choice reward
+586 Not enough HP to open
+587 The modifier stacks on newly spawned normal enemies
+588 Or extract with your current earnings
+589 Save new earnings from this run
+590 Accept challenge
+591 Buy supplies
+592 Tokens
+593 Open chest
+594 Pay HP
+595 Skip
+596 Keep fighting
+597 Combat paused
+598 Your call
+599 Choosing
+600 Continue when ready
+601 Unlock after your first extraction
+602 Locked
+603 Event tokens
+604 Curse time remaining
+605 Modifiers
+606 Complete
+607 Next stage needs
+608 Missing
+609 Ultimate active
+610 Combination ready
+611 Frost
+612 Explosions
+613 Knockback
+614 Pierce
+615 One weapon applies the status
+616 another weapon's hit triggers the combo
+617 Actual combos
+618 Faction activations
+619 Top damage
+620 Awaiting combat
+621 Reroll
+622 Left
+623 Skip
+624 Ban
+625 Bans left
+626 This normal reward type will not appear again this run
+627 Survive
+628 seconds for a bonus reward
+629 Clinic Closed challenge
+630 Healing effects disabled
+631 No room in backpack
+632 Send to storage first
+633 Activate
+634 -piece bonus
+635 Need
+636 Equip to trigger
+637 Replace
+638 Can trigger
+639 Will lose
+640 stage bonus
+641 Achievements
+642 Preferences
+643 Night Shift Hall of Fame
+644 Close achievements
+645 Just one more milestone
+646 Quick reward reveal
+647 Skip the reel delay
+648 Send new attachments to storage first
+649 Resume combat immediately after choosing
+650 Stored attachments are inactive
+651 Organize them during level-up pauses
+652 Auto-pick still follows your build settings
+653 Only real runs count toward achievements
+654 Achievements do not add permanent damage
+655 Waiting for your progression profile
+656 Weapons discovered
+657 Attachments
+658 Complete
+659 Achievement unlocked
+660 Discover it in a real run to unlock
+661 Backpack Survival
+662 Back to home
+663 Fusion codex
+664 Boss practice
+665 Graphics
+666 Automation
+667 Audio
+668 Monster codex
+669 Backpack workshop
+670 Item codex
+671 Weapon codex
+672 How to play
+673 Pack your bag
+674 Together
+675 Survive till dawn
+676 A pixel graveyard
+677 Kill monsters and collect XP
+678 Piece together your build
+679 Let your squad's firepower handle the horde
+680 Auto
+681 -player co-op
+682 -minute extraction
+683 Continue into Endless
+684 Your callsign
+685 Example
+686 Play solo
+687 Create co-op room
+688 Enter
+689 Join squad
+690 Permanent training
+691 Collect scrap every run
+692 Even defeat pays
+693 Start with one pistol and an empty backpack
+694 Milestones unlock starting weapons and relics
+695 Plan during preparation
+696 In combat
+697 let your equipment do the talking
+698 Duskwood Cemetery
+699 Auto-combat preview
+700 One backpack
+701 Your way to survive
+702 Control
+703 Every player's build
+704 helps the squad
+705 Assault Rifle
+706 Frost Launcher
+707 Copy invite link
+708 Leave
+709 Level & XP
+710 XP
+711 Progress to next level
+712 Enemies drop XP
+713 Your survivor picks it up automatically
+714 Choose attachments on level-up
+715 Runner
+716 Brute
+717 Movement mode
+718 Individual choice
+719 Switch any time
+720 -minute graveyard extraction
+721 Boss status
+722 Top-down battlefield
+723 Squad waiting to deploy
+724 Movement joystick
+725 Survivor squad
+726 Zombie
+727 Freeze
+728 My equipment
+729 Level-up weapons & attachments
+730 Attachments favor your equipped weapons
+731 Other builds can still appear
+732 Tactical backpack
+733 Combination recipes
+734 Six-column, five-row backpack grid
+735 Drag an item, or select it and click a slot
+736 Rotate
+737 Select an attachment
+738 See its effects and weapon binding
+739 Storage
+740 Stored items are inactive
+741 Next wave starts automatically
+742 Close guide
+743 Kill to level up
+744 Build to survive
+745 Each player can choose auto or manual movement
+746 Switch any time during combat
+747 Manual mode uses only
+748 joystick direction controls
+749 No manual aiming
+750 shooting
+751 reloading
+752 abilities or pickups
+753 Your survivor aims automatically
+754 heals and collects XP
+755 Your job is to make the equipment work together
+756 Start with a Tempered Pocket Pistol
+757 Begin with just one pistol
+758 The second slot and backpack start empty
+759 Obtain weapons through level-up rewards
+760 Equip up to two at once
+761 Put attachments in your backpack
+762 Drag or select an item
+763 then click an empty slot
+764 Press
+765 or click
+766 to rotate
+767 Stored attachments are inactive
+768 Bind to weapon
+769 Select an attachment and assign weapon
+770 or
+771 Character items need no weapon binding
+772 The Fridge Snail boosts attachments touching its edges
+773 Normal zombies drop blue XP
+774 Runners drop green XP
+775 Brutes drop red XP
+776 Bosses drop red XP
+777 Everyone in co-op receives the same XP
+778 Choose a reward on level-up
+779 Level up when your XP bar fills
+780 The reels reveal weapon
+781 or item rewards; pick one of three
+782 Skip the animation if you like
+783 Every level can award white
+784 blue
+785 purple
+786 or red rarity
+787 Rare rewards are less likely at low levels
+788 and become more likely as you level up
+789 Each item has a fixed rarity
+790 Higher levels improve the chance of rare items
+791 Matching weapon types and rarities can be merged voluntarily
+792 Legendary is the normal cap
+793 Keep new weapons by default
+794 Empty slots fill automatically
+795 Extras go to reserve when both slots are full
+796 To upgrade, choose
+797 or use the equipment panel
+798 Merge voluntarily
+799 Unequip weapons to reserve at any time
+800 replace or merge them
+801 Discarding a reserve weapon removes it permanently
+802 Claimed items auto-place in your backpack
+803 They work immediately if they fit
+804 Combat resumes when all online teammates finish choosing
+805 No extra Continue button
+806 Multiple level-ups are resolved one at a time
+807 At higher levels
+808 leveling takes more XP
+809 Requires
+810 and keeps increasing
+811 Excess XP and levels carry between waves
+812 New runs reset them
+813 Remaining XP is collected at wave end
+814 Clearing a wave does not grant free attachments
+815 Defeat timed bosses
+816 After total combat time reaches
+817 minutes, the first boss arrives
+818 minutes, another arrives
+819 minutes, face the final boss
+820 Defeat it and claim the chest to extract
+821 Or continue into Endless
+822 Level-ups and safehouse preparation do not advance the clock
+823 Waves follow automatically
+824 HP does not fully reset
+825 Defeating a boss restores
+826 Drops
+827 XP and a chest
+828 Approach a chest to open it automatically
+829 Each teammate gets one extra three-choice reward
+830 When holding both Legendary recipe weapons
+831 there is a
+832 Level-up pauses preserve combat state and HP
+833 Stand near a downed teammate during combat
+834 seconds to revive automatically
+835 The run ends if everyone goes down
+836 Build tips
+837 Frost Launcher slows enemies
+838 A teammate's Minigun deals bonus damage
+839 Suspicious Sausage applies burns quickly
+840 Questionable Lunchbox supports nearby teammates
+841 Monster artwork
+842 Got it
+843 Deploy
+844 Close weapon codex
+845 Bring guns to a spell fight
+846 Preview weapon effects
+847 Kill and level up to earn weapons
+848 Merge matching types and rarities
+849 Weapon category
+850 Filter weapon category
+851 All weapons
+852 Trick shots
+853 Elemental control
+854 Unusual melee
+855 Survival & scaling
+856 Demolition
+857 Firearms
+858 Basic melee
+859 Arcane weapons
+860 Preview rarity
+861 Preview weapon rarity
+862 Close item codex
+863 weird little things
+864 Four new builds
+865 Level-up rewards favor your equipped weapons
+866 Kill and level up to obtain items
+867 Active only inside the backpack
+868 Weapon attachments must bind to one weapon slot
+869 Character items affect you or your squad
+870 Some items have drawbacks
+871 Build style
+872 Filter build style
+873 All items
+874 Sustain
+875 Explosions
+876 Dodge
+877 Arcane
+878 General
+879 Firepower showcase
+880 Close showcase
+881 Turn the horde into a light show
+882 Automatic aiming and attacks
+883 Projectiles
+884 muzzle flashes
+885 trails and impacts each have their own effects
+886 Preview only
+887 No equipment awarded
+888 Weapon rarity
+889 Full firepower
+890 Fusion weapons are Mythic
+891 Adjust intensity in Graphics
+892 Horde firepower practice
+893 Storm in a Snow Globe
+894 Meteor Takeout Menu
+895 Frost Staff
+896 Hot Take Wand
+897 Orbital Eviction Notice
+898 Thor's Overtime Permit
+899 Flamethrower
+900 Performance Review Axe
+901 Barber's Scissors
+902 Shuriken
+903 Minigun
+904 Pump-Action Shotgun
+905 Laser Gun
+906 Rocket Launcher
+907 Weapon effects against a live horde
+908 Virtual Legendary dual loadout
+909 Real attacks and hit effects
+910 No records or progression
+911 Preview each rarity below
+912 Hide level-up rewards
+913 Choose this level-up reward
+914 Stop auto-pick
+915 Let me choose
+916 Pass on these supplies
+917 Take nothing
+918 Skip animation
+919 Close monster codex
+920 The horde only gets meaner
+921 Monsters evolve with total combat time
+922 minutes: charging skeletons
+923 minutes: ground-slamming brutes
+924 minutes: ranged casters
+925 minutes: first boss
+926 minutes: another boss
+927 Different monsters drop different XP
+928 Artwork
+929 Graveyard Radio
+930 Close audio settings
+931 Hear the horde
+932 Hear the level-up
+933 Pixel sound effects follow the battle
+934 Click below to preview
+935 Rapid attacks and monster calls are rate-limited automatically
+936 Sound volume
+937 Choose a sound to preview
+938 Background music
+939 Original chiptunes follow camp
+940 horde
+941 boss and reward phases
+942 Playback starts after your first click
+943 Pauses when you switch tabs
+944 Music volume
+945 Play music
+946 Graveyard Shift
+947 Camp
+948 Battle sound previews
+949 Sound previews
+950 Weird recipes
+951 Close recipes
+952 Placement matters
+953 Let your attachments do the talking
+954 Adjacency recipes
+955 Directional star slots
+956 Select or drag an attachment
+957 Click an empty slot to place
+958 Rotate to change star-slot direction
+959 Practice below never awards gear or changes your real backpack
+960 Separate backpack layout practice
+961 Rotate selected attachment
+962 Bind
+963 Rifle
+964 Frost gun
+965 Reset example
+966 Star slots & adjacency recipes
+967 Close graphics
+968 Keep the horde running smoothly
+969 Effect intensity
+970 Light
+971 Rich
+972 Frame-rate cap
+973 Show damage & XP numbers
+974 Show live FPS
+975 These settings affect visuals only
+976 Attack warnings and enemy projectiles always remain visible
+977 Combat speed and rewards are unchanged
+978 Close boss practice
+979 When the warning lights up
+980 dodge first, shoot second
+981 The Graveyard Timekeeper
+982 Iron Coffin Tyrant
+983 Blood Moon Judge
+984 Boss ability practice
+985 Separate training arena
+986 Survivor dodges automatically
+987 Infinite HP
+988 Boss HP increased for observation
+989 No effect on real combat or rewards
+990 Real bosses arrive after total combat time reaches
+991 Forbidden boss recipes
+992 Close fusion codex
+993 Two maxed weapons
+994 One beautiful bad idea
+995 Defeated bosses drop chests
+996 Approach to open automatically
+997 Every teammate receives one bonus reward
+998 You must personally hold both Legendary recipe
+999 weapons
+1000 The chest has a
+1001 chance to offer an optional fusion
+1002 Equipped or reserve weapons both count
+1003 Same-name recipes require two separate copies
+1004 Choosing fusion consumes the ingredients
+1005 The result uses one main weapon slot
+1006 Normal level-ups never award fusion weapons
+1007 Close chest practice
+1008 Walk over
+1009 Open the chest
+1010 Survivor approaches the chest automatically
+1011 Two virtual Legendary ingredients provided
+1012 Always shows the selected fusion recipe
+1013 Fusion chance in real boss chests:
+1014 Practice does not change real equipment or rewards
+1015 Close permanent upgrades
+1016 Even a bad night brings something home
+1017 Every combat
+1018 Every personal
+1019 Per boss
+1020 Successful extraction
+1021 Permanent upgrades
+1022 Gold forging
+1023 Character unlocks
+1024 Expedition loadout
+1025 Milestones unlock new ways to play
+1026 Starting weapons and relics apply next run
+1027 The host chooses the map before deployment
+1028 Teammates need not unlock the same map
+1029 The night shift crew
+1030 Turn this run's haul
+1031 into next run's confidence
+1032 attributes to upgrade
+1033 and Collection: three upgrade paths
+1034 Each caps at
+1035 ranks
+1036 Scrap buys reliable upgrades
+1037 Gold spins the rank reels
+1038 Sometimes the hammer slips
+1039 Forging directly changes permanent training ranks
+1040 Maximum
+1041 Scrap training still provides reliable upgrades
+1042 Gold forging may rank up
+1043 max out
+1044 stay put or rank down
+1045 Choose a forging target
+1046 Forging rarity reels
+1047 Anvil of Questionable Decisions
+1048 Ranks flash
+1049 the reels slow down
+1050 and the result lands
+1051 A downgrade reduces this upgrade's permanent bonus
+1052 Every attempt costs gold
+1053 Results save immediately
+1054 Preview the rank reels
+1055 No gold spent
+1056 The anvil is ready
+1057 Pick an upgrade
+1058 Let the reels guide your hammer
+1059 Enemies occasionally drop gold
+1060 Elites drop it more often
+1061 Bosses always drop it
+1062 Co-op shares base gold
+1063 Your own income bonuses apply separately
+1064 Normal enemy drops: approximately
+1065 at the start
+1066 minutes onward, scaling caps
+1067 Gold is kept even on defeat
+1068 Retreat
+1069 Forge after settlement
+1070 Recent
+1071 runs
+1072 Progression is saved by this game server
+1073 This browser is linked automatically
+1074 Storage persistence depends on the host
+1075 Clearing site data removes this browser's profile link
+1076 Different browsers have separate progression
+1077 Run results
+1078 Close results
+1079 My playstyle
+1080 Close automation settings
+1081 Let your preferences make the call
+1082 Individual settings
+1083 Apply immediately and remember preferences
+1084 Auto movement and auto rewards can be toggled separately
+1085 Auto movement strategy
+1086 Balance movement and scavenging
+1087 Aggressive
+1088 Chase XP
+1089 chests and supplies
+1090 Conservative
+1091 Hold the area where you switched modes
+1092 Affects auto movement only
+1093 Conservative mode collects within
+1094 range of your position
+1095 Both styles dodge nearby enemies
+1096 projectiles and boss warnings
+1097 Auto-claim level-up
+1098 and chest rewards
+1099 Delay before claiming
+1100 Choose manually during the countdown
+1101 Combat continues after selection
+1102 Co-op waits for all online teammates
+1103 Build preference
+1104 Firepower & survival
+1105 Damage & attack speed
+1106 Sustain
+1107 Healing & defense
+1108 Growth
+1109 Pickup & movement
+1110 Area & splash
+1111 Evasion & sustain
+1112 Arcane
+1113 Magic weapons & casting attachments
+1114 Preferred weapons
+1115 Any category
+1116 Prioritize owned weapons
+1117 Auto-equip stronger weapons
+1118 Old weapons stay in reserve
+1119 Allow same-type, same-rarity merges
+1120 Consumes the new reward
+1121 Allow boss fusion
+1122 Consumes both Legendary recipe weapons
+1123 When no reward fits
+1124 Pause auto-pick
+1125 Let me organize
+1126 Skip this reward
+1127 Auto-pick checks actual rarity
+1128 sustained firepower
+1129 injuries and backpack space
+1130 Never automatically discards owned gear
+1131 Merging and fusion are off by default
+1132 Pack Panic
+1133 Combat
+1134 Horde Overtime
+1135 Surge
+1136 Blood Moon Bells
+1137 Lucky Midnight Snack
+1138 Rewards
+1139 Home Before Dawn
+1140 See You Next Shift
+1141 Defeat
+1142 Spare Arms Recycling
+1143 Selected
+1144 weapons
+1145 Random attachment
+1146 Random weapon
+1147 Rarity is pure luck
+1148 Ingredient rarity
+1149 level and luck do not affect the result
+1150 Unequip main weapons first
+1151 Recycling consumes selected reserve weapons
+1152 Replaced weapons stay in reserve
+1153 Save enough to recycle them
+1154 Clear selection
+1155 New weapons enter reserve
+1156 Main weapons are not replaced automatically
+1157 No automatic merging
+1158 Attachments made during combat enter storage
+1159 Place them during a level-up pause
+1160 Boss fusion weapons are excluded from recycling rewards
+1161 Recycling reveal
+1162 Added to reserve
+1163 Attachment acquired
+1164 Select up to
+1165 For an attachment, select
+1166 Recycling workshop
+1167 Close recycling workshop
+1168 Even old guns deserve a second shot
+1169 Provides
+1170 virtual reserve weapons
+1171 Uses the real recycling rules
+1172 Does not change your equipment
+1173 gold or progression
+1174 Provide another
+1175 practice ingredients
+1176 Recycling practice
+1177 Night Shift Camp
+1178 Lost Archives
+1179 come back stronger
+1180 Every weird little thing
+1181 has a story
+1182 Find your rhythm
+1183 One pistol
+1184 Tonight's build
+1185 progression and honors
+1186 prepare here
+1187 Discover equipment on expeditions
+1188 Light up your collection
+1189 Adjust graphics
+1190 audio and automation
+1191 Menu
+1192 Close menu
+1193 Catch your breath
+1194 then head back out
+1195 Characters & progression
+1196 Collection & builds
+1197 Settings
+1198 Survival builds
+1199 Start expedition
+1200 Auto combat
+1201 Left / right to change scenes
+1202 Camp scenes
+1203 Previous scene
+1204 Next scene
+1205 Tonight
+1206 how will you deploy?
+1207 Close deployment options
+1208 Survive solo
+1209 or fight together
+1210 Codex
+1211 Enter camp
+1212 Open collection
+1213 Open settings
+1214 Close backpack
+1215 Solo inspection pauses combat
+1216 Co-op combat continues
+1217 Attachments cannot be rearranged during combat
+1218 My stats
+1219 Close stats
+1220 Your current build
+1221 Run controls
+1222 Backpack
+1223 Stats
+1224 Claim supplies
+1225 Camp menu
+1226 Inspecting
+1227 Paused
+1228 Awaiting deployment
+1229 Horde survival
+1230 Max HP
+1231 Effective damage
+1232 Self-Made Survivor
+1233 Extract in the No Nepotism challenge
+1234 Healthcare Not Included
+1235 Extract in the Clinic Closed challenge
+1236 Clocking Out
+1237 Complete your first run
+1238 Passed Probation
+1239 Survive in one run for
+1240 Graveyard Regular
+1241 Home Before Dawn
+1242 Extract successfully once
+1243 Employee of the Fright
+1244 Cleanup on Aisle Dead
+1245 monsters
+1246 Management Material
+1247 Defeat a total of
+1248 bosses
+1249 Intern No More
+1250 Reach in one run:
+1251 Scrap Artist
+1252 Recycle a total of
+1253 Two Arms, One Bad Idea
+1254 Complete a boss weapon fusion
+1255 Can't Touch This
+1256 Successfully dodge a total of
+1257 Extra Credit in Chemistry
+1258 Trigger a total of
+1259 weapon combos
+1260 No Coworker Left Behind
+1261 Revive teammates a total of
+1262 Voluntary Overtime
+1263 Complete one Endless modifier choice
+1264 Soup-erhuman
+1265 Awaken the Midnight Clinic ultimate
+1266 Fire Code? What Fire Code?
+1267 Awaken the Unlicensed Pyrotechnics ultimate
+1268 Outrunning My Problems
+1269 Awaken the Exit Strategy Club ultimate
+1270 Remedial Archmage
+1271 Awaken the Last-Minute Magic Academy ultimate
+1272 Arms Librarian
+1273 Discover
+1274 Bag of Holding (Mostly Junk)
+1275 attachments
+1276 Roaming
+1277 Melee approach
+1278 Close-range spread
+1279 Bombardment spacing
+1280 Control & circle
+1281 Spell kiting
+1282 Ranged kiting
+1283 Invalid auto-reward settings
+1284 Invalid auto-reward toggle
+1285 Delay must be
+1286 Invalid auto-reward preference
+1287 Cold Storage Coordinator
+1288 Attachments on edge star slots gain
+1289 An attachment cannot receive this bonus twice
+1290 Crosshair Assembly Line
+1291 Attachments bound to the same weapon in the two forward slots
+1292 Each adds critical chance
+1293 Per weapon, at most
+1294 Same-weapon attachment
+1295 Lunchbox Triage
+1296 Food in the two slots above
+1297 Healing per item
+1298 Total cap
+1299 Food
+1300 XP Skewers
+1301 Growth items in surrounding star slots
+1302 XP per item
+1303 Growth item
+1304 Harvest horde
+1305 Dense, low-HP enemies
+1306 Breather
+1307 Collect loot
+1308 Graveyard cleanup
+1309 Claim the final chest to extract
+1310 Final boss
+1311 Blood Moon Judgment
+1312 Last five minutes
+1313 Bring your build together
+1314 Boss incoming
+1315 Firepower check
+1316 Ranged threats
+1317 Watch the warnings
+1318 Armored brutes
+1319 Prepare crowd control
+1320 Leave an escape route
+1321 Collect XP
+1322 Find a second weapon
+1323 DoorDash of Doom
+1324 Unlicensed Demolition Foreman
+1325 Past-Due Storm Mage
+1326 Standard expedition
+1327 Use your character
+1328 upgrades and equipment
+1329 No Nepotism
+1330 Disable all character and permanent stat bonuses this run
+1331 Keep unlocked starting weapons and relics
+1332 Clinic Closed
+1333 All healing this run
+1334 including regeneration and max-HP upgrade healing is disabled
+1335 Teammate revives still work
+1336 Open terrain
+1337 Learn the horde's rhythm
+1338 Runaway Laboratory
+1339 Acid pools activate every
+1340 seconds
+1341 seconds of warning
+1342 then remain active for
+1343 Leave the acid to avoid damage
+1344 Ruined City Corridors
+1345 Solid ruined walls block movement
+1346 Work around corners to focus fire
+1347 The central passage stays open
+1348 Midnight Clinic
+1349 Regeneration per second
+1350 Accumulated effective healing
+1351 releases an area pulse
+1352 Cooldown
+1353 Unlicensed Pyrotechnics
+1354 Blast area
+1355 Splash damage
+1356 Explosive kills trigger up to
+1357 chain blasts
+1358 Exit Strategy Club
+1359 A successful dodge strikes up to
+1360 nearby enemies
+1361 Last-Minute Magic Academy
+1362 Casting speed
+1363 Spell area
+1364 Status duration
+1365 Arcane Overload
+1366 -second burst
+1367 Spell damage
+1368 One weapon slows
+1369 a different explosive weapon hits
+1370 creating bonus frost shrapnel
+1371 Per-target cooldown
+1372 One weapon burns
+1373 a different electric
+1374 or chain weapon hits
+1375 adding lightning
+1376 Up to
+1377 targets
+1378 One weapon knocks back
+1379 a different piercing weapon hits
+1380 making the target vulnerable
+1381 to direct hits
+1382 Express Horde
+1383 New normal enemies move faster
+1384 Stacks up to
+1385 Hard Shell Company
+1386 New normal enemies gain
+1387 armor
+1388 Restless Remains
+1389 Normal enemies leave a telegraphed explosion on death
+1390 seconds until detonation
+1391 Collect
+1392 distinct items to start linking
+1393 Event challenge
+1394 Curse survived
+1395 Bonus reward
+1396 Corrosive acid
+1397 Enemy death trap
+1398 Event has ended
+1399 The approaching player makes the choice
+1400 Downed players cannot choose events
+1401 Invalid Endless modifier
+1402 Not enough event tokens
+1403 For every
+1404 Not enough HP
+1405 Cannot afford the chest's HP cost
+1406 Invalid event choice
+1407 Piercing laser
+1408 Impact radius
+1409 Notice served
+1410 This graveyard has until tomorrow to vacate
+1411 Hot & Cold Open
+1412 Frost-and-flame cone
+1413 Slow
+1414 Flash-frozen
+1415 flame-grilled
+1416 The kitchen couldn't decide
+1417 so you get both
+1418 Ranged electric strike
+1419 Chain
+1420 Area slow
+1421 A message from the power company
+1422 The zombies are covering tonight's bill
+1423 Grim Reaper's Barbershop
+1424 Sweeping cut
+1425 Lifesteal
+1426 Kills build permanent soul growth this run
+1427 No mirror needed
+1428 Check the obituary instead
+1429 Cupid's Restraining Order
+1430 Extreme-range piercing arrow
+1431 Critical chance
+1432 Prioritizes tough enemies
+1433 You can ghost the date
+1434 You can't ghost this arrow
+1435 Bottlecap Board of Directors
+1436 Returning projectile
+1437 Bounce
+1438 The caps held a meeting
+1439 Motion passed unanimously
+1440 Your skull is next
+1441 Automated Code Violation
+1442 Rapid explosive rounds
+1443 Legendary explosive turret
+1444 Inspection complete
+1445 Building gone
+1446 Efficiency: outstanding
+1447 Reply-All Shotgun
+1448 Rapid scattershot
+1449 Area damage
+1450 Seven replies to the same email
+1451 Still typing after the first second
+1452 Double-Booked Retirees
+1453 Fires twice per attack
+1454 The second shot deals
+1455 Two retired managers are back
+1456 Every zombie gets twice the meeting invites
+1457 Fusion requires actually holding both Legendary recipe weapons
+1458 Boss XP
+1459 Releases chain lightning
+1460 Higher rarity adds jumps
+1461 Launches explosive fireballs
+1462 burns clustered enemies
+1463 Works with both magic and explosion attachments
+1464 The Freezer Supervisor
+1465 Fires frost bolts
+1466 slows enemies around the target
+1467 Higher rarity expands the frost area
+1468 Slingshot
+1469 Stones bounce between enemies
+1470 Higher rarity adds bounces
+1471 High-critical thrown weapon
+1472 Critical hits bounce to another enemy
+1473 Crossbow
+1474 High-critical bolts
+1475 Pierce enemies in a straight line
+1476 Taser
+1477 Slows enemies around the target
+1478 Higher rarity expands the control area
+1479 Fires fireballs
+1480 Inflicts rarity-scaling burn damage
+1481 Cone of fire
+1482 Burns the horde in front of you
+1483 Static Shiv
+1484 Melee stabs release chain lightning
+1485 jumping to distant enemies
+1486 Cactus Club
+1487 Strikes launch spikes at nearby enemies
+1488 Converts part of melee damage into HP
+1489 Higher rarity increases lifesteal
+1490 Kills collect souls
+1491 Permanently boosts all weapon damage for this run
+1492 Wrench
+1493 Deploys one turret per wave
+1494 White: bullets
+1495 Blue: fire
+1496 Purple: laser
+1497 Red: explosions
+1498 Shredder
+1499 Rapid explosive rounds
+1500 Hits blast nearby enemies
+1501 Basic ranged weapon
+1502 Reliable single shots
+1503 Revolver
+1504 Six hard-hitting shots
+1505 Heavy single-target hits
+1506 Beams pierce targets in a straight line
+1507 Large explosions
+1508 Best against packed hordes
+1509 Knife
+1510 Rapid melee stabs
+1511 Base critical chance
+1512 Spear
+1513 Medium-range melee thrusts
+1514 Pierce enemies in front
+1515 Reliable mid-range sustained fire
+1516 Close-range area damage
+1517 Hold back the horde
+1518 High fire rate
+1519 Great for applying burns
+1520 Sniper Rifle
+1521 Extreme range
+1522 Prioritizes tough targets
+1523 Slows zombies
+1524 Buys breathing room for the squad
+1525 Rapid bullet barrage
+1526 Damage against slowed enemies
+1527 Partly Cloudy, Mostly Angry
+1528 Tiny globe. Big weather problem
+1529 Stormfront Studio Apartment
+1530 The downstairs neighbors have complaints
+1531 Mandatory Storm Warning
+1532 The zombies pay the electric bill
+1533 Act of God, LLC
+1534 Your entire cemetery is experiencing an outage
+1535 Mildly Spicy Menu
+1536 Would you like fries with your fireball?
+1537 Lava Delivery
+1538 Arrives hot. Explodes on arrival
+1539 All-You-Can-Burn Buffet
+1540 Everyone at the table is well done
+1541 Extinction-Level Catering
+1542 Complimentary meteor refills
+1543 Freezer Intern
+1544 Chill. Literally
+1545 Assistant Freezer Manager
+1546 Defrost requests denied
+1547 Regional Cold Front Director
+1548 The whole block is out of heat
+1549 Eternal Winter Facilities
+1550 The sun called in sick
+1551 Snooze-Button Pistol
+1552 Not a morning person. Neither are they
+1553 Two-Coffees-In Pistol
+1554 HR has stopped taking its calls
+1555 Assistant to the Regional Pistol
+1556 That's Assistant Regional Pistol to you
+1557 Retired but Still Firing
+1558 The pension doesn't cover this much ammo
+1559 Six Shots, Zero Notice
+1560 Every bullet has already quit
+1561 Six Angry Coworkers
+1562 One full rotation
+1563 Twice the workplace resentment
+1564 Wild West Human Resources
+1565 Six rounds
+1566 Six termination letters
+1567 Death's Attendance Sheet
+1568 When your name comes up
+1569 your shift is over
+1570 Mandatory Overtime Rifle
+1571 The boss isn't down
+1572 so neither is the magazine
+1573 Unionized Assault Rifle
+1574 Collecting back pay, one round at a time
+1575 Department Head Rifle
+1576 The horde is staying after work
+1577 Company Liquidation Party
+1578 Finally allowed to fire the boss
+1579 Personal Space Enforcer
+1580 Back up
+1581 Thanks in advance
+1582 Party Pooper
+1583 This gathering has exceeded capacity
+1584 Group Chat Disbander
+1585 One message. Total silence
+1586 Certified Introvert
+1587 No one nearby
+1588 No social anxiety
+1589 Reply-All SMG
+1590 Same message, twenty-four times
+1591 Upstairs Renovation Crew
+1592 Construction starts at eight. It never ends
+1593 Family Group Chat
+1594 There is no mute button
+1595 Cemetery-Wide Podcast
+1596 Congratulations. Everyone is subscribed
+1597 Your Neighbor Has Opinions
+1598 Especially about that big guy over there
+1599 High-Definition Grudge
+1600 The clearer the view
+1601 the worse the review
+1602 Long-Distance Complaint Line
+1603 Your call has been connected to the brute
+1604 One-Star Review from Orbit
+1605 The target is over the horizon
+1606 The complaint has already arrived
+1607 Laser Kebab Kit
+1608 Zombies, please form a line
+1609 Queue Enforcement System
+1610 Line cutters join the skewer anyway
+1611 Graveyard Grill
+1612 One beam
+1613 A whole row of regulars
+1614 Galactic Skewer Master
+1615 The entire block is on the menu
+1616 Return to Sender
+1617 Sign here. Explode here
+1618 Express Refund Request
+1619 Packaging and recipient both returned
+1620 One-Star Customer Support
+1621 Your callback is arriving
+1622 Everyone nearby will feel it
+1623 Free Shipping to the Afterlife
+1624 Final delivery confirmed
+1625 No review requested
+1626 Aggressive Stapler
+1627 Pins the horde to the agenda
+1628 Principal's Office Edition
+1629 Move and you get stapled again
+1630 Family-Size Binding Kit
+1631 Every nearby zombie gets the deluxe binding
+1632 Graveyard Publishing House
+1633 Every body is a hardcover
+1634 Your Ex's Ice-Cold Stare
+1635 Instantly cools things down
+1636 Mandatory Cooling-Off Period
+1637 Even zombies need time to process this
+1638 Cold Storage Supervisor
+1639 New arrivals go straight into the freezer
+1640 Ice Age Eviction Notice
+1641 Heating has been discontinued cemetery-wide
+1642 Kitchen Knife's Rebel Phase
+1643 Apples are off the menu
+1644 Runaway Cutlery
+1645 Everything looks like it needs peeling
+1646 Farmers' Market Menace
+1647 Even the big ones get diced
+1648 Michelin-Starred Mortuary
+1649 Tonight's sashimi looks a little green
+1650 Oversized Toothpick
+1651 Zombie kebabs
+1652 Dine-in only
+1653 Extra-Long Skewer
+1654 Fits several regular customers
+1655 Graveyard Clothesline
+1656 The laundry is unusually quiet
+1657 Toothpick of the Gods
+1658 There's an entire horde stuck between your teeth
+1659 Childhood Grievance Launcher
+1660 The pebbles remember
+1661 Confiscated by the Principal
+1662 Your stones are being returned with interest
+1663 Playground Hit List
+1664 One pebble making house calls
+1665 Department of Childhood Collections
+1666 Wherever it bounces
+1667 a debt gets settled
+1668 Flying Bottlecap
+1669 Pop a skull before you pop a soda
+1670 Ninja Clock-Out Card
+1671 The cap spins faster than management
+1672 Twist-Off Skull Opener
+1673 Open one zombie
+1674 Check the best-before date
+1675 Ultimate Fright-sbee
+1676 Champions always come back for seconds
+1677 Cupid Got Laid Off
+1678 The arrow arrived
+1679 The feelings did not
+1680 Worst First Date
+1681 We call this one mutual damage
+1682 Cupid's Block List
+1683 Couldn't connect two hearts
+1684 Connected an entire horde instead
+1685 Certified Heartbreaker
+1686 All your exes, one convenient arrow
+1687 Bug Zapper Promotion
+1688 The bugs got bigger
+1689 Industrial Pest Control
+1690 Tonight's mosquitoes walk on two legs
+1691 Past-Due Electric Bill
+1692 The horde pays up
+1693 with reduced speed
+1694 Thunder Intern Graduates
+1695 I run the grid now
+1696 Spicy Soup Ladle
+1697 One quick dip
+1698 Three seconds of regret
+1699 Extra-Hot Upgrade
+1700 Even the bystanders are sweating
+1701 Chief Chili Officer
+1702 Everything touched stays simmering
+1703 Hell's Kitchen Certificate
+1704 The zombies bring the ingredients
+1705 I bring the heat
+1706 Cafeteria Chef's First Shift
+1707 Every zombie served medium-well
+1708 Fully Licensed Barbecue
+1709 One grill isn't enough? Open two
+1710 Kitchen Meltdown
+1711 Everyone in front
+1712 You're all getting cooked
+1713 Afterlife Banquet
+1714 The horde is officially on the menu
+1715 Revenge of the Static Socks
+1716 One stab shocks the next-door neighbor
+1717 Angry Wool Sweater
+1718 Take it off once
+1719 Everyone's hair stands up
+1720 Thunderstorm Sick Note
+1721 Chain overtime
+1722 Nobody clocks out
+1723 Thor Forgot His Hammer
+1724 Borrowing a knife for this shift
+1725 No-Hug Stick
+1726 Complimentary spikes with every handshake
+1727 Certified Prickly Personality
+1728 Nice to meet you. Ouch
+1729 Desert Complaints Department
+1730 File one complaint
+1731 Everyone gets a spike
+1732 Grand-Cactus of the Family
+1733 Lots of relatives
+1734 Every one a prick
+1735 Barber's Overtime
+1736 Trim the zombies
+1737 top up yourself
+1738 Cut, Wash & Resuscitate
+1739 Their life is your tip
+1740 Lifetime Membership Deal
+1741 The worse the customer looks
+1742 the healthier the barber gets
+1743 Afterlife Senior Stylist
+1744 One lap around the salon
+1745 Back to full health
+1746 Afterlife Performance Review
+1747 More cuts
+1748 Bigger bonus
+1749 Probationary Reaper's Axe
+1750 Every sale goes on the blade
+1751 Underworld Middle Management
+1752 The horde is your quarterly report
+1753 Death's Annual Bonus
+1754 Better performance
+1755 Less reasonable axe
+1756 If It Ain't Fixed, Shoot It
+1757 A bold pivot in wrench-based careers
+1758 Mechanic Takes an Apprentice
+1759 The apprentice breathes fire
+1760 Engineer Loses Patience
+1761 Repair procedure updated to laser
+1762 Chief Demolition Officer
+1763 Repairs complete
+1764 Neighborhood removed
+1765 Sentient Paper Shredder
+1766 Today we shred something different
+1767 Office Farewell Gift
+1768 First the contract, then the zombies
+1769 Records Department Rampage
+1770 Every horde is marked for destruction
+1771 Cosmic Document Disposal
+1772 Even Death can't tape this back together
+1773 This looks like a permit issue
+1774 Auto-casting
+1775 Chain lightning
+1776 Blast radius
+1777 Splash
+1778 Critical bounce
+1779 Jump range
+1780 On hit, launches
+1781 spikes
+1782 Damage lifesteal
+1783 kills permanently add
+1784 Cap
+1785 Bullet
+1786 Burning
+1787 Turret
+1788 Per weapon slot:
+1789 turret
+1790 Radius
+1791 Lasts
+1792 Cone attack
+1793 Count Sipula's Thermos
+1794 Regenerate per second:
+1795 Eight-Armed Band-Aid
+1796 Each personal kill restores
+1797 Grandma's Respawn Stew
+1798 Healing received
+1799 Movement speed
+1800 Cherry Issues
+1801 Bound weapon gains at least
+1802 blast radius
+1803 Splash deals a share of direct damage:
+1804 Expired Fireworks Seasoning
+1805 All weapon blast radii
+1806 Requires an explosive weapon or Cherry Issues
+1807 Propane Tank's Last Will
+1808 All weapon splash damage
+1809 Requires explosions
+1810 Splash bonus caps at
+1811 Two Left Slippers
+1812 Total dodge chance caps at
+1813 Statistically Waterproof Umbrella
+1814 All weapon damage
+1815 A successful dodge prevents all damage
+1816 Rabbit's Loaner Foot
+1817 Successful dodges restore
+1818 Base dodge healing caps at
+1819 Arcane Cheat Sheet
+1820 Bound magic weapon direct damage and burn
+1821 Does not affect non-magic weapons
+1822 Rune-Safe Pot Holder
+1823 Bound magic weapon blast and slow area
+1824 Status duration
+1825 Blueberry Mana Pop
+1826 All magic weapon casting speed
+1827 No manual casting or mana cost
+1828 Insomniac's Coffee
+1829 All weapon attack speed
+1830 Radioactive Overbite
+1831 Bound weapon hits slow the target
+1832 Canned Space Worms
+1833 Still-Twitching Salad
+1834 Each squad XP pickup
+1835 restores your HP:
+1836 Enamel-Optional Lemonade
+1837 Healing received
+1838 Includes regeneration
+1839 Existential Tomato
+1840 Snail Without a GPS
+1841 Enemy move speed within range
+1842 Teammate auras do not stack
+1843 Bite-Me Dentures
+1844 Bound weapon lifesteal
+1845 Moldy Boxing Gloves
+1846 Bound weapon knockback
+1847 Bosses receive only
+1848 effect
+1849 Duct Tape Gumbo
+1850 Damage taken
+1851 Reduction caps at
+1852 Propeller-Powered Combover
+1853 Squad XP
+1854 Uses the squad's highest bonus
+1855 Backward Fridge Magnet
+1856 XP pickup radius
+1857 Murder Bunny's Nap Pillow
+1858 Reload time
+1859 Belching Birthday Cake
+1860 Brain Mushroom
+1861 Hedgehog Rage Pajamas
+1862 When struck by melee
+1863 damage the attacker for
+1864 Retired Octopus Arm
+1865 Each personal zombie kill
+1866 Cyclops' Last Will
+1867 Minimum
+1868 Sausage-Smuggling Snake
+1869 All weapon hits add per second:
+1870 burn damage
+1871 Necroduck's Ledger
+1872 All weapon critical chance
+1873 Bottomless Cookie Jar
+1874 Bound weapon magazine size
+1875 Cyclops' Reading Glasses
+1876 Bound weapon range
+1877 Expired Espresso
+1878 Bound weapon attack speed
+1879 Suspicious Sausage
+1880 Hits inflict burn
+1881 per second
+1882 Dentist's Secret Ammo Box
+1883 Bound weapon damage
+1884 Self-Loading Magazine
+1885 Bound weapon reload speed
+1886 Fridge Snail
+1887 Adjacent weapon attachment effects
+1888 Applies once at most
+1889 Questionable Lunchbox
+1890 seconds, heal the most injured nearby teammate
+1891 Alien Baby's Diaper
+1892 Character max HP
+1893 Runaway Slippers
+1894 Character move speed
+1895 Directionally Challenged Duck
+1896 Bound weapon critical chance
+1897 Critical hits deal double damage
+1898 Angry Charging Potato
+1899 Count Sipula's Thermos provides regeneration
+1900 Eight-Armed Band-Aid heals on kills
+1901 Grandma's Respawn Stew amplifies healing
+1902 Place the Thermos next to the Band-Aid
+1903 Midnight Clinic Snack
+1904 plus
+1905 Pair with Scissors or Bite-Me Dentures for lifesteal
+1906 Cherry Issues adds explosions to ordinary weapons
+1907 Fireworks Seasoning expands the area
+1908 The Propane Tank's Last Will boosts splash damage
+1909 Place Cherry Issues next to Fireworks Seasoning
+1910 Pair with Meteor Takeout Menu or Rocket Launcher
+1911 Slippers
+1912 The Umbrella and Rabbit's Foot increase dodge
+1913 The Rabbit's Foot heals on successful dodges
+1914 Adjacent Slippers and Umbrella add
+1915 Total dodge cap
+1916 You still need to move away from danger
+1917 Bind the Cheat Sheet and Pot Holder to the same magic weapon
+1918 Adjacency adds
+1919 spell damage and burn
+1920 Mana Pop increases casting speed
+1921 Chain lightning
+1922 meteor explosions
+1923 and frost control can be mixed
+1924 Safehouse secure
+1925 then deploy
+1926 Room is full
+1927 This run has already started
+1928 Join a new room
+1929 Unlicensed Electric Coffee
+1930 Bound weapon attack speed bonus
+1931 Sausage Hot Pot
+1932 Bound weapon burn bonus
+1933 Sour Enough to Resurrect
+1934 Healing effect bonus
+1935 Internal Experience Service
+1936 Pickup radius bonus
+1937 XP bonus
+1938 Diaper Blast Bunker
+1939 Max HP bonus
+1940 Damage reduction bonus
+1941 Dentist's Scope
+1942 Bound weapon critical bonus
+1943 Range bonus
+1944 Automatic Cookie Feeder
+1945 Bound weapon reload time bonus
+1946 Snail's Passing Permit
+1947 Character move speed bonus
+1948 Slow aura bonus
+1949 Healing received bonus
+1950 Cherry Fireworks Festival
+1951 Bound weapon blast radius bonus
+1952 Rainy-Day Footwork
+1953 Dodge chance bonus
+1954 Straight-A Cheat Spell
+1955 Same magic weapon damage and burn bonus
+1956 Invalid XP value
+1957 Matching recipes can fuse two Legendary weapons
+1958 XP bar full
+1959 Choose a weapon or attachment
+1960 Matching weapon types and rarities can merge
+1961 Level-up complete
+1962 Keep fighting the horde
+1963 Only solo runs can pause for inspection
+1964 Unready before choosing a challenge
+1965 Only the host chooses the challenge
+1966 Challenges unlock after your first extraction
+1967 Unready before choosing a map
+1968 Only the host chooses the map
+1969 Map is locked
+1970 No adjustable reward available
+1971 No skips remaining
+1972 No rerolls remaining
+1973 Invalid ban
+1974 Already banned
+1975 Invalid movement strategy
+1976 Invalid movement mode
+1977 This run has ended
+1978 Invalid movement direction
+1979 Complete graveyard extraction first
+1980 Endless mode started
+1981 Equipment and HP carry over
+1982 This run has not ended
+1983 Backpack is locked during combat
+1984 Wait for a level-up or wave end
+1985 Choose all pending rewards first
+1986 Weapons are obtained through level-up rewards
+1987 Invalid weapon slot
+1988 Weapon not found
+1989 Requires matching weapon type and rarity
+1990 Legendary weapons cannot merge further
+1991 Requires two matching weapons of the same rarity
+1992 Legendary is the highest normal rarity
+1993 Weapon reserve is full
+1994 Discard a reserve weapon first
+1995 Cannot recycle while downed or offline
+1996 Storage is full
+1997 Free a storage slot before recycling
+1998 Recycle
+1999 old weapons
+2000 Invalid reward
+2001 Fusion is available only from boss chests
+2002 Organize or discard items
+2003 No matching weapon pair to merge
+2004 Equip or discard one
+2005 Item not found
+2006 Remove another item or rearrange the backpack
+2007 Does not fit here
+2008 Check boundaries and overlaps
+2009 Teammate is offline
+2010 Teammate's storage is full
+2011 gave to
+2012 Unknown action
+2013 Inventory is full or no eligible reward exists
+2014 Organize or choose manually
+2015 seconds until auto-pick
+2016 Claim reward No.
+2017 reward
+2018 Inventory full
+2019 Skipping reward according to settings
+2020 Auto-claim
+2021 Same-rarity merge
+2022 Equipped
+2023 Previous weapon moved to reserve
+2024 Please handle manually
+2025 Keep surviving the horde
+2026 The Overlord approaches
+2027 Defend the safehouse block
+2028 Boss defeated
+2029 Blood Moon Judgment ended
+2030 Elite XP
+2031 Monster contact
+2032 Rebuild your loadout
+2033 Try again
+2034 Boss contact
+2035 Revived
+2036 Open
+2037 Each teammate gets one reward
+2038 Dawn has arrived
+2039 Scrap paid out
+2040 Overlord defeated
+2041 Squad extracted
+2042 waves cleared
+2043 Ground XP collected
+2044 Night Guard
+2045 Balanced start
+2046 No extra drawbacks
+2047 Available from the start
+2048 Temp with a Temper
+2049 Total kills:
+2050 Graveyard Courier
+2051 Survive in one run for
+2052 Expired EMT
+2053 Defeat a boss
+2054 Reinforced Workwear
+2055 Max HP per rank
+2056 Bullet Reeducation
+2057 Damage per rank
+2058 Trigger Finger Pilates
+2059 Fire rate per rank
+2060 Certified Magnet Operator
+2061 Pickup radius per rank
+2062 Actually Unexpired Medicine
+2063 Regeneration per rank
+2064 Intern Speedrun Course
+2065 XP per rank
+2066 Lunchbox Body Armor
+2067 Damage taken per rank
+2068 Combined cap with backpack defense:
+2069 Paid Escape Leave
+2070 Base move speed per rank
+2071 Collateral Benefits
+2072 Blast
+2073 slow and melee area per rank
+2074 Off-the-Clock Overtime
+2075 Burn and slow duration per rank
+2076 Ancestral Luck Subscription
+2077 Higher rarity rewards become more likely per rank
+2078 Rare rewards are never guaranteed
+2079 Direct Deposit Multiplier
+2080 Gold income per rank
+2081 Calculated from total run earnings
+2082 Invalid forging request
+2083 Invalid or maxed forging target
+2084 Not enough gold
+2085 Enemies drop gold
+2086 Invalid forging result
+2087 Invalid or maxed training target
+2088 Not enough scrap
+2089 Finish a run to earn scrap
+2090 Character is locked
+2091 Invalid run record
+2092 Default starting kit
+2093 Unlocked by default
+2094 Past-Due Wand
+2095 One Tempered wand
+2096 Start an arcane build
+2097 Reach highest level:
+2098 Get Off My Lawn
+2099 One Tempered shotgun
+2100 Close-range spread
+2101 Cold Shoulder Staff
+2102 One Tempered frost staff
+2103 Start with crowd control
+2104 bosses
+2105 Finish this run
+2106 Save your progression
+2107 Survive until
+2108 to unlock the Graveyard Courier
+2109 Best
+2110 min
+2111 to unlock the starting wand
+2112 Get another
+2113 kills to unlock the starting shotgun
+2114 Challenge
+2115 the boss arriving then
+2116 to unlock the frost staff and laboratory
+2117 Complete
+2118 to unlock the ruined city and challenge modes
+2119 to unlock the Echo Receipt
+2120 Try a different dual-weapon combo
+2121 or push into Endless survival
+2122 Travel Light
+2123 No relic equipped
+2124 Wrong-Way Compass
+2125 Each run grants an extra
+2126 reward rerolls
+2127 runs
+2128 Clinic Closing Bell
+2129 seconds, heal the squad for
+2130 Echo Receipt
+2131 auto-attacks, add one extra hit
+2132 dealing this share of the original damage:
+2133 Expedition equipment is locked
+2134 Invalid recycling target
+2135 Choose
+2136 distinct reserve weapons
+2137 Ingredients changed
+2138 Select reserve weapons again
+2139 Arrives
+2140 boss fights
+2141 Monster charge
+2142 Shock ring
+2143 Area attack
+2144 Enraged
+2145 Awakened
+2146 Horde summoning
+2147 Could not save progression yet
+2148 Please try again later
+2149 Too many actions
+2150 Leave the room before switching progression profiles
+2151 Progression profile is not connected
+2152 Unready before training or changing character
+2153 Previous room expired
+2154 Create a new room
+2155 Server rooms are busy
+2156 Co-op room not found
+2157 Check the room code
+2158 One progression profile cannot control two survivors in one room
+2159 Join a room first
+2160 Only an active solo run can be saved and exited
+2161 Invalid action

@@ -1,0 +1,10 @@
+Animated Monsters by stealthix
+Source: https://opengameart.org/content/animated-monsters
+Download: https://opengameart.org/sites/default/files/monsters_1.zip
+License: Creative Commons Zero (CC0 1.0 Universal)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Retrieved: 2026-10-06
+
+Original zombie.png, skeleton.png and witch.png sheets remain unmodified.
+LASTPACK crops animation cells at runtime and adds tinted variants, elite armor and rank markers.
+The sprites' license listing and permission are on the source page. Attribution is optional under CC0; author credit is retained here and in the game's guide.

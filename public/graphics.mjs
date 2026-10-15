@@ -1,0 +1,5 @@
+export function createGraphics(storage=globalThis.localStorage){
+  let saved={};try{saved=JSON.parse(storage?.getItem('lastpack-graphics')||'{}');}catch{}
+  const settings={quality:['low','balanced','high'].includes(saved.quality)?saved.quality:'balanced',fps:[30,60].includes(saved.fps)?saved.fps:60,strength:[.35,.65,1].includes(saved.strength)?saved.strength:.65,density:['all','sparse','critical'].includes(saved.density)?saved.density:'sparse',numbers:saved.numbers!==false,showFps:saved.showFps===true};
+  return {settings,update(patch){if([.35,.65,1].includes(patch.strength))settings.strength=patch.strength;if(['all','sparse','critical'].includes(patch.density))settings.density=patch.density;if(['low','balanced','high'].includes(patch.quality))settings.quality=patch.quality;if([30,60].includes(patch.fps))settings.fps=patch.fps;if(typeof patch.showFps==='boolean')settings.showFps=patch.showFps;if(typeof patch.numbers==='boolean')settings.numbers=patch.numbers;storage?.setItem('lastpack-graphics',JSON.stringify(settings));},due(now,last){return now-last>=1000/settings.fps-1;}};
+}

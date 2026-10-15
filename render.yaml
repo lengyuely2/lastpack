@@ -1,0 +1,19 @@
+# Creates only a FREE service. No paid disk or database is provisioned.
+services:
+  - type: web
+    name: lastpack
+    runtime: node
+    plan: free
+    region: virginia
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: PROFILE_FILE
+        value: /tmp/lastpack/profiles.json
+      - key: EPHEMERAL_STORAGE
+        value: "1"
