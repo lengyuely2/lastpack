@@ -1,5 +1,11 @@
 // English game copy: canonical Chinese keys never change game state.
 export const EN = {
+  "营地面板": "Camp panel",
+  "面板分类": "Panel categories",
+  "返回出征": "Back to departure",
+  "怪物": "Enemies",
+  "画面": "Graphics",
+  "指南": "Guide",
   "消耗两把传说武器，融合只占一槽。": "Consumes two Legendary weapons. The fusion uses one slot.",
   "研修项目": "Training",
   "薪火传承": "Legacy",
