@@ -9,6 +9,7 @@ import { randomBytes } from 'node:crypto';
 import { WebSocketServer, WebSocket } from 'ws';
 import { createRoom, addPlayer, action, tick, snapshot, stats, pauseForUpgrades, resumeWhenReady, clearMovement } from './shared/game.mjs';
 import {ProfileStore} from './profile-store.mjs';
+import {BACKUP_LIMIT} from './profile-backup.mjs';
 import {profileBonus,publicProfile,runSummary,expeditionUnlocks} from './shared/progression.mjs';
 const root=fileURLToPath(new URL('.',import.meta.url));
 const roomStore=new RoomStore((process.env.PROFILE_FILE||path.join(root,'data','profiles.json'))+'.rooms');
@@ -17,11 +18,11 @@ const profiles=await new ProfileStore(process.env.PROFILE_FILE||path.join(root,'
 const files=new Map([['/','public/index.html'],['/app.mjs','public/app.mjs'],['/controls.mjs','public/controls.mjs'],['/presentation.mjs','public/presentation.mjs'],['/style.css','public/style.css'],['/art.mjs','public/art.mjs'],['/game.mjs','shared/game.mjs'],['/favicon.svg','public/favicon.svg']]);
 files.set('/fusions.mjs','shared/fusions.mjs');
 files.set('/progression.mjs','shared/progression.mjs');files.set('/campaign.mjs','shared/campaign.mjs');
-files.set('/career.mjs','public/career.mjs');
+files.set('/profile-backup-ui.mjs','public/profile-backup-ui.mjs');files.set('/career.mjs','public/career.mjs');
 files.set('/forge-reel.mjs','public/forge-reel.mjs');
 files.set('/expedition.mjs','shared/expedition.mjs');files.set('/expedition-ui.mjs','public/expedition-ui.mjs');
 files.set('/character-art.mjs','shared/character-art.mjs');files.set('/i18n.mjs','public/i18n.mjs');files.set('/locale-en.mjs','public/locale-en.mjs');files.set('/camp-panels.mjs','public/camp-panels.mjs');files.set('/shell.mjs','public/shell.mjs');files.set('/shell.css','public/shell.css');files.set('/challenges.mjs','shared/challenges.mjs');files.set('/achievements.mjs','shared/achievements.mjs');files.set('/experience-ui.mjs','public/experience-ui.mjs');
-files.set('/recycling.mjs','shared/recycling.mjs');files.set('/recycling-ui.mjs','public/recycling-ui.mjs');
+files.set('/reward-insights.mjs','shared/reward-insights.mjs');files.set('/recycling.mjs','shared/recycling.mjs');files.set('/recycling-ui.mjs','public/recycling-ui.mjs');
 files.set('/bag-links.mjs','shared/bag-links.mjs');
 files.set('/bag-lab.mjs','public/bag-lab.mjs');
 files.set('/survival.mjs','shared/survival.mjs');
@@ -34,6 +35,18 @@ for(const name of ['zombie','skeleton','witch'])files.set(`/assets/monsters/${na
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.png':'image/png'};
 const server=http.createServer(async(req,res)=>{
   let url;try{url=new URL(req.url,'http://localhost');}catch{res.writeHead(400).end();return;}
+  if(url.pathname==='/api/legacy-backup'){
+    const reply=(status,data)=>res.writeHead(status,{'content-type':'application/json','cache-control':'no-store','x-content-type-options':'nosniff'}).end(JSON.stringify(data));
+    try{
+      if(req.headers.origin&&new URL(req.headers.origin).host!==req.headers.host){reply(403,{error:'Origin denied'});return;}
+      if(req.method==='GET'){const token=(req.headers.authorization||'').replace(/^Bearer /,'');if(!profiles.get(token)){reply(404,{error:'成长档案尚未连接'});return;}reply(200,profiles.backup(token));return;}
+      if(req.method!=='POST'){reply(405,{error:'Method not allowed'});return;}
+      let size=0,chunks=[];for await(const chunk of req){size+=chunk.length;if(size>BACKUP_LIMIT){reply(413,{error:'存档文件过大'});return;}chunks.push(chunk);}
+      const value=JSON.parse(Buffer.concat(chunks).toString('utf8'));
+      if([...sessions.values()].some(s=>s.player.connected&&s.room.profileTokens?.[s.player.id]===value.token)){reply(409,{error:'请先离开出征再恢复存档'});return;}
+      reply(200,await profiles.restore(value));
+    }catch{reply(400,{error:'存档文件无效或已损坏'});}return;
+  }
   if(url.pathname==='/health'){res.writeHead(200,{'content-type':'application/json'}).end(JSON.stringify({ok:true,ephemeralStorage:process.env.EPHEMERAL_STORAGE==='1',rooms:rooms.size,activeRooms:[...rooms.values()].filter(r=>r.players.some(p=>p.connected)).length,activePlayers:[...rooms.values()].reduce((n,r)=>n+r.players.filter(p=>p.connected).length,0)}));return;}
   const file=files.get(url.pathname);if(!file){res.writeHead(404).end('Not found');return;}
   try{const data=await readFile(path.join(root,file));res.writeHead(200,{'content-type':types[path.extname(file)],'x-content-type-options':'nosniff','cache-control':'no-cache','content-security-policy':"default-src 'self'; connect-src 'self' ws: wss:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'; frame-ancestors 'none'; base-uri 'self'"}).end(data);}catch{res.writeHead(500).end('Unable to read file');}
