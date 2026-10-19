@@ -6,7 +6,7 @@ import {FUSIONS,FUSION_CHANCE,eligibleFusions,consumeFusion} from './fusions.mjs
 export {FUSIONS,FUSION_CHANCE,eligibleFusions} from './fusions.mjs';
 import {MAPS,applyFactions,onFactionKill,onFactionDodge,tickFactions,weaponCombo,possibleCombos,moveOnMap,augmentEnemy,tickExpedition,chooseEvent} from './expedition.mjs';
 import {difficulty,tickSurvival,dangerDistance} from './survival.mjs';
-import {campaignPacing,campaignMilestone,spawnElite} from './campaign.mjs';
+import {campaignPacing,campaignMilestone,spawnElite,warnElite} from './campaign.mjs';
 import {goldDrop} from './progression.mjs';
 import {bagLinks,starCells,STAR_RULES} from './bag-links.mjs';
 export {bagLinks,starCells,STAR_RULES} from './bag-links.mjs';
@@ -492,7 +492,8 @@ function defeated(room, enemy, owner, color, weapon = null) {
   if(enemy.kind==='boss'&&room.survival){room.bossKills++;room.chests.push({id:`ch${++room.serial}`,x:clamp(enemy.x,45,WIDTH-45),y:clamp(enemy.y,45,HEIGHT-45),boss:enemy.name||'首领'});effect(room,{type:'bossDown',x:enemy.x,y:enemy.y,life:2,value:'首领已击败',color:'#efcd85'});for(const p of room.players)healPlayer(room,p,30,'#efcd85');}
   if(room.campaign&&!room.endless&&enemy.kind==='boss'&&enemy.encounter>=3){room.finalBossDefeated=true;room.spawned=room.total;room.hazards=[];room.hostileShots=[];room.log.unshift('红月审判结束 · 领取最终宝箱后撤离');}
   onFactionKill(room,owner,enemy,weapon,expeditionAPI);
-  const xp = enemy.elite?{...EXPERIENCE.runner,value:enemy.kind==='brute'?30:10,name:'精英经验'}:EXPERIENCE[enemy.kind]||EXPERIENCE.runner;
+  if(room.campaign&&enemy.encounterElite){if(room.supplies.length<20)room.supplies.push({id:`s${++room.serial}`,x:clamp(enemy.x,45,915),y:clamp(enemy.y,45,575),heal:12,vacuum:true});effect(room,{type:'eliteDown',x:enemy.x,y:enemy.y,life:2,value:'精英击败 · 经验与聚能补给',color:'#efcd85'});}
+  const xp = enemy.elite?{...EXPERIENCE.runner,value:enemy.encounterElite?(enemy.kind==='brute'?60:40):enemy.kind==='brute'?30:10,name:'精英经验'}:EXPERIENCE[enemy.kind]||EXPERIENCE.runner;
   const pile=room.survival&&room.gems.length>=500?room.gems.find(g=>g.name===xp.name):null;if(pile){pile.value+=xp.value;pile.stack=(pile.stack||1)+1;}else room.gems.push({id:`g${++room.serial}`,x:enemy.x,y:enemy.y,...xp});
 }
 function collectGems(room, dt, sweep = false) {
@@ -563,6 +564,7 @@ function stepTick(room,dt) {
   if(room.campaign){room.streakTimer=Math.max(0,room.streakTimer-dt);if(!room.streakTimer)room.streak=0;for(const p of room.players){p.powerTimer=Math.max(0,p.powerTimer-dt);p.invulnerable=Math.max(0,p.invulnerable-dt);}}
   if(room.survival)tickSurvival(room,dt,{effect,stats,hurt:hurtPlayer});
   tickExpedition(room,dt,expeditionAPI);if(room.phase!=="battle")return;
+  if(room.campaign&&(!room.finalBossDefeated||room.endless)&&!(room.bossCount>=3&&!room.endless))warnElite(room,effect);
   if(room.campaign&&(!room.finalBossDefeated||room.endless)&&!(room.bossCount>=3&&!room.endless)&&room.survivalTime>=(room.nextEliteAt??180)){room.nextEliteAt??=180;spawnElite(room,effect);}
   room.effects=room.effects.map(e=>({...e,life:e.life-dt})).filter(e=>e.life>0);
   room.nextSpawn-=dt;
@@ -613,7 +615,7 @@ function stepTick(room,dt) {
   for(const p of room.players.filter(p=>p.hp<=0&&!p.retired)){clearMovement(p);const helper=room.players.find(a=>a.hp>0 && distance(a,p)<110);if(helper){p.revive+=dt;if(p.revive>=4){p.hp=p.maxHp*.35;p.revive=0;helper.revives++;p.invulnerable=1;effect(room,{type:'heal',x:p.x,y:p.y,value:'救起',color:p.color,life:1});}}else p.revive=0;}
   room.enemies=room.enemies.filter(e=>e.hp>0);
   if(room.players.every(p=>p.hp<=0)){room.phase='defeat';return;}
-  if(room.campaign){room.supplies=room.supplies.filter(f=>{const p=room.players.find(p=>p.connected&&p.hp>0&&p.hp<p.maxHp&&distance(p,f)<28);if(!p)return true;healPlayer(room,p,f.heal,'#b7cd86');return false;});}
+  if(room.campaign){let vacuum=false;room.supplies=room.supplies.filter(f=>{const p=room.players.find(p=>p.connected&&p.hp>0&&(f.vacuum||p.hp<p.maxHp)&&distance(p,f)<28);if(!p)return true;healPlayer(room,p,f.heal,'#b7cd86');if(f.vacuum){vacuum=true;for(const ally of room.players)if(ally.connected&&ally.hp>0)ally.powerTimer=Math.max(ally.powerTimer||0,4);effect(room,{type:'powerUp',x:p.x,y:p.y,life:1.8,value:'聚能补给 · 经验回收 / 火力全开',color:'#efcd85'});}return false;});if(vacuum)collectGems(room,0,true);}
   if(room.survival){room.chests=room.chests.filter(ch=>{const opener=room.players.find(p=>p.hp>0&&p.connected&&distance(p,ch)<28);if(!opener)return true;grantBossReward(room,ch.boss);effect(room,{type:'chestOpen',x:ch.x,y:ch.y,life:1.2,color:'#f3cb85'});room.log.unshift(`${opener.name}打开${ch.boss}的宝箱 · 小队各获得一次奖励`);room.log=room.log.slice(0,6);return false;});}
   const cleared = room.spawned===room.total && !room.enemies.length;
   collectGems(room,dt,cleared);

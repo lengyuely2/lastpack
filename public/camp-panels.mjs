@@ -6,7 +6,7 @@ export function createCampPanels({$,getState,selectScene}){
  const groups={
   1:{label:'薪火传承',items:[['career-button','career-dialog','薪火传承','survivor'],['experience-button','experience-dialog','荣誉簿','charm']]},
   2:{label:'图鉴',items:[['catalog-button','weapon-catalog','武器','pistol'],['items-button','item-catalog','配件','bag'],['fusion-button','fusion-dialog','融合','stormorb'],['monsters-button','monster-catalog','怪物','ghostaxe']]},
-  3:{label:'设置',items:[['graphics-button','graphics-dialog','画面','scope'],['sound-button','sound-settings','声音','bell'],['automation-button','automation-settings','自动','loader'],['help-button','help','指南','echo']]}
+  3:{label:'设置',items:[['graphics-button','graphics-dialog','画面','scope'],['sound-button','sound-settings','声音','bell'],['automation-button','automation-settings','自动','loader'],['backup-button','backup-dialog','存档','bag'],['help-button','help','指南','echo']]}
  };
  const panel=document.createElement('section');panel.id='camp-panel';panel.className='camp-panel hidden';panel.setAttribute('aria-label','营地面板');panel.setAttribute('aria-labelledby','camp-panel-title');panel.innerHTML='<h2 id="camp-panel-title" class="camp-accessible-title"></h2><nav id="camp-panel-tabs" aria-label="面板分类"></nav><div id="camp-panel-content"></div>';landing.append(panel);
  const origins=new Map();

@@ -17,7 +17,7 @@ export function createSoundEvents(){
     const ids=new Set(previous.enemies.map(e=>e.id));
     if(state.phase==='battle')for(const e of state.enemies)if(!ids.has(e.id))out.push({type:'enter',kind:e.kind,rank:e.rank,x:e.x});
     if(state.phase==='battle'&&Math.floor(state.time/4)>Math.floor(previous.time/4)&&state.enemies.length){const e=state.enemies[Math.floor(state.time/4)%state.enemies.length];out.push({type:'cry',kind:e.kind,rank:e.rank,x:e.x});}
-    for(const e of state.effects||[])if(!seen.has(e.id)){seen.add(e.id);if(['shot','xp','gold','death','hurt','dodge','blast','heal','growth','bossStage','bossDown','bossCast','enemyBlast','chestOpen','fusion','powerUp','streak','eliteArrival','factionBurst','weaponCombo','factionAwake','eventWin','recycle'].includes(e.type))out.push({...e,local:e.owner===ownId});}
+    for(const e of state.effects||[])if(!seen.has(e.id)){seen.add(e.id);if(['shot','xp','gold','death','hurt','dodge','blast','heal','growth','bossStage','bossDown','bossCast','enemyBlast','chestOpen','fusion','powerUp','streak','eliteArrival','eliteWarning','eliteDown','factionBurst','weaponCombo','factionAwake','eventWin','recycle'].includes(e.type))out.push({...e,local:e.owner===ownId});}
     // Only retain active IDs. Authoritative effect IDs never repeat within a room.
     seen=new Set((state.effects||[]).map(e=>e.id));previous=state;return out;
   }};
@@ -67,9 +67,9 @@ export function createAudio({Context=globalThis.AudioContext||globalThis.webkitA
     else if(e.type==='factionBurst'){tone(90,50,.25,.14,'triangle');hiss(700,100,.2,.1);}
     else if(e.type==='powerUp'){tone(220,880,.35,.2,'triangle');tone(440,1320,.25,.15,'sine',.08);}
     else if(e.type==='streak'){[784,1047,1568].forEach((f,i)=>tone(f,f,.14,.16,'triangle',i*.06));}
-    else if(e.type==='surge'||e.type==='eliteArrival'){tone(80,40,.65,.2,'sawtooth');tone(120,60,.5,.12,'triangle',.12);}
+    else if(e.type==='surge'||e.type==='eliteArrival'||e.type==='eliteWarning'){tone(80,40,.65,.2,'sawtooth');tone(120,60,.5,.12,'triangle',.12);}
     else if(e.type==='bossStage'){tone(110,220,.4,.2,'sawtooth');tone(65,40,.5,.3);}
-    else if(e.type==='bossDown'){[523,784,1047].forEach((f,i)=>tone(f,f,.4,.25,'triangle',i*.1));}
+    else if(e.type==='bossDown'||e.type==='eliteDown'){[523,784,1047].forEach((f,i)=>tone(f,f,.4,.25,'triangle',i*.1));}
     else if(e.type==='bossCast'){tone(360,90,.25,.18,'sawtooth');}
     else if(e.type==='enemyBlast'){hiss(650,60,.25,.3);tone(75,30,.23,.2);}
     else if(e.type==='blast'){hiss(1300,40,.4,.55);tone(65,25,.35,.5);}

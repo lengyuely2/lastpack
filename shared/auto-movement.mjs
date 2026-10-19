@@ -50,7 +50,7 @@ export function automaticDirection(room,p,s,nearby,nearest,living){
   if(close>(aggressive?85:conservative?155:120)){
     const allowed=point=>safe(point)&&(!conservative||distance(point,p.guardAnchor)<=140);
     const closest=list=>list?.filter(allowed).reduce((best,a)=>!best||distance(p,a)<distance(p,best)?a:best,null);
-    destination=p.hp<p.maxHp*.7?closest(room.supplies):null;
+    destination=closest((room.supplies||[]).filter(f=>f.vacuum||p.hp<p.maxHp*.7));
     destination??=closest(room.chests);
     destination??=closest(room.events);
     destination??=closest(room.gems);
