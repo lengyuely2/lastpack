@@ -1,10 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {translateText as t,setLanguage,getLanguage} from '../public/i18n.mjs';
+import {translateText as t,setLanguage,getLanguage,initialLanguage} from '../public/i18n.mjs';
 import {EN} from '../public/locale-en.mjs';
 import {WEAPONS,ITEMS,FUSIONS,weaponStats,weaponFlavor,weaponEffectText} from '../shared/game.mjs';
 const han=/[\u3400-\u9fff]/u;
+test('first visits default to English; explicit links and saved choices remain available',()=>{
+ assert.equal(initialLanguage(null,null),'en');assert.equal(initialLanguage('invalid','fr'),'en');assert.equal(initialLanguage(null,'zh'),'zh');assert.equal(initialLanguage(null,'en'),'en');assert.equal(initialLanguage('zh','en'),'zh');assert.equal(initialLanguage('en','zh'),'en');
+});
 test('English covers all existing source phrases, and Chinese is returned exactly',async()=>{
  const phrases=JSON.parse(await readFile(new URL('../docs/i18n-phrases.json',import.meta.url),'utf8'));
  for(const zh of phrases){assert.ok(EN[zh],zh);assert.equal(han.test(t(zh,'en')),false,zh);assert.equal(t(zh,'zh'),zh);}

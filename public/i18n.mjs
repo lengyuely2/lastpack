@@ -2,8 +2,9 @@ import {EN} from './locale-en.mjs';
 const han=/[\u3400-\u9fff]/u;
 const escapeRE=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const pattern=new RegExp(Object.keys(EN).sort((a,b)=>b.length-a.length).map(escapeRE).join('|'),'gu');
-let language='zh';
-try{const saved=globalThis.localStorage?.getItem('lastpack-language'),requested=globalThis.location?new URLSearchParams(location.search).get('lang'):null;language=['zh','en'].includes(saved)?saved:requested==='en'?'en':'zh';}catch{}
+export const initialLanguage=(saved,requested)=>['zh','en'].includes(saved)?saved:['zh','en'].includes(requested)?requested:'en';
+let language='en';
+try{const saved=globalThis.localStorage?.getItem('lastpack-language'),requested=globalThis.location?new URLSearchParams(location.search).get('lang'):null;language=initialLanguage(saved,requested);}catch{}
 const englishCache=new Map();
 export const getLanguage=()=>language;
 export function translateText(value,locale=language){
